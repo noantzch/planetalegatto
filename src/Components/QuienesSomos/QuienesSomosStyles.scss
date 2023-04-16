@@ -1,0 +1,40 @@
+/* COLORES */
+$color-primario: #fb9403;
+$color-1: #3F84FA;
+$color-2: #03cb8f;
+$color-3:#9cc624;
+$color-4:#fb9403;
+$color-5: #F9245F;
+/* FUENTES */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2') format('woff2');
+}
+*{
+font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+.quienesPortada{
+    width: 100%;
+    height: 30vw;
+}
+.directoraContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.textoDirectora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgDirectoraContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}

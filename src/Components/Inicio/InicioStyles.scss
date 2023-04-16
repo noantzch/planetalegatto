@@ -1,0 +1,500 @@
+/* COLORES */
+  $color-primario: #fb9403;
+  $color-1: #3F84FA;
+  $color-2: #03cb8f;
+  $color-3:#9cc624;
+  $color-4:#fb9403;
+  $color-5: #F9245F;
+  /* FUENTES */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2') format('woff2');
+  }
+*{
+  font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+.inicioContainer{
+  display: flex;
+  flex-direction: column;
+}
+/* NAVBAR */
+.navbarContainer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+.navbar2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(20px);
+  z-index: 99;
+}
+.navbar2-btn{
+  padding: 12px 31px;
+  margin: 0 20px;
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+@media  (max-width: 1024px) {
+  .navbar2-btn{
+    padding: 9px 17px;
+    font-size: 21px;
+    margin: 0 13px;
+  }
+}
+.navbar2-btn:hover{
+  transform: translateY(-6px);
+  color: white;
+}
+#nav-btn1{
+  background-color: $color-1;
+}
+#nav-btn2{
+  background-color: $color-2;
+}
+#nav-btn3{
+  background-color: $color-3
+}
+#nav-btn4{
+  background-color: $color-4;
+}
+#nav-btn5{
+  background-color: $color-5;
+}
+.navbarMobile{
+  display: none !important;
+}
+
+@media (max-width:768px) {
+  .navbarMobile{
+    display: flex !important;
+    max-width: 100vw !important;
+  }
+  .nav-link{
+    text-align: center;
+
+  }
+  .navbarContainer2{
+    display: none;
+  }
+  .headerContainer{
+    display: none !important;
+  }
+}
+.navbar{
+  --bs-navbar-padding-y: 0;
+}
+.navlinkmobile{
+  color: black !important;
+}
+/* HEADER */
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.redesHeaderContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.redesHeader{
+  font-size: 3em;
+  color: $color-primario;
+  margin: 0 0.5em;
+}
+.logoHeader{
+  width: 15em;
+}
+.telefonoHeader{
+  font-size: 3em;
+  color: $color-primario;
+}
+@media  (max-width: 1024px) {
+  .logoHeader{
+    width: 10em;
+  }
+  .telefonoHeader{
+    font-size: 2em;
+  }
+  .redesHeader{
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .logoHeader{
+    width: 5em;
+  }
+}
+@media (max-width: 481px) {
+  .logoHeader{
+    width: 3em;
+  }
+}
+/* FOOTER */
+footer{
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+footer h6{
+  font-size: 2em;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgb(63, 63, 63);
+  color: white;
+}
+.redesFooterContainer{
+  display: flex;
+  flex-direction: row;
+}
+.redesFooter{
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 3vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+.redesIcon{
+  font-size: 3em;
+}
+/* saludo */
+.saludo{
+  background-color: $color-primario;
+  padding: 3vw;
+  h3{
+    font-weight: 700;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+  }
+  p{
+    padding: 2vw 16vw;
+    font-size: 1.2vw;
+    text-align: center;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .saludo{
+    padding: 10vw 10vw;
+    h3{
+      font-size: 5vw;
+      padding: 1vw;
+    }
+    p{
+      padding: 1vw;
+      font-size: 2.5vw;
+    }
+  }
+}
+/* planetas */
+.planetasContainer{
+  margin: 9vw;
+  margin-top: 6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    " planeta1 . planeta3 ." 
+    ". planeta2 . planeta4 " ;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  cursor: none;
+  padding-left: 7vh;
+  padding-right: 3vh;
+}
+@media (max-width: 1024px) {
+  .planetasContainer{
+    padding-left: 4vh;
+    padding-right: 1vh;
+  }
+}
+@media (max-width:768px){
+  .planetasContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px;
+    cursor: auto;
+  }
+}
+.cohete{
+  z-index: 2;
+}
+@media (max-width:768px) {
+  .cohete{
+    display: none;
+  }
+}
+.planeta{
+  background-image: url("../../Images/marte.png");
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el fondo del elemento */
+  background-position: center center;
+  text-align: center;
+  width: 20vw;
+  height: 20vw;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+.planeta:hover{
+  transform: scale(1.2);
+}
+#planeta1 {
+  grid-area:planeta1; 
+}
+
+#planeta2 {
+  grid-area: planeta2;
+  filter: hue-rotate(90deg);
+}
+#planeta2 img{
+  filter: hue-rotate(-90deg);
+}
+#planeta3 {
+  grid-area: planeta3;
+  filter: hue-rotate(180deg);
+}
+#planeta3 img{
+  filter: hue-rotate(-180deg);
+}
+
+#planeta4 {
+  grid-area: planeta4;
+  filter: hue-rotate(280deg);
+}
+#planeta4 img{
+  filter: hue-rotate(-280deg);
+}
+
+.tituloPlaneta{
+  color: black;
+  font-size: 2.2vw;
+  text-align: center;
+  font-family: 'Rancho', cursive;
+  padding-top: 2vw;
+  padding-right: 1.4vw;
+  padding-left: 0.5vw;
+  transform: rotate(-20deg); 
+  line-height: 1;
+}
+.cartel{
+  width: 11vw;
+  height: 14vw;
+  background-image: url("../../Images/cartel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: translate(-10vh, -12vh);
+}
+
+.textoPlaneta{
+  color: white;
+  text-shadow: 5px 5px 7px rgb(67, 67, 67);
+  font-size: 2.2vw;
+  font-family: 'Rancho';
+  margin: 0 4.5vh;
+  padding-left: 4vh;
+  transform: translate(-3vh, -20vh) rotate(-12deg);
+  line-height: 0.9;
+}
+
+.imagenPlaneta{
+  width: 20.2vw;
+  height: 20.2vw;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 5;
+  transform: translateX(-0.1vw);
+}
+.carouselPlanetas{
+  display: none;
+}
+@media (max-width:768px) {
+  .carouselPlanetas{
+    display: block;
+  }
+  .planetasContainer{
+    display: none;
+  }
+  .planeta{
+    margin-top: 14vh ;
+    margin-left: 6vh;
+    width: 40vw;
+    height: 40vw;
+
+  }
+  .planeta:hover{
+    transform: none;
+  }
+  .cartel{
+    width: 16vw;
+    height: 20vw;
+    transform: translate(-2vh, -8vh);
+  }
+  .tituloPlaneta{
+    padding-top: 4vw;
+    font-size: 3vw;
+  }
+  .textoPlaneta{
+    font-size: 3.5vw;
+    transform: translate(-3vh, -10vh) rotate(-12deg);
+  }
+  .carouselPlanetasInner  .carousel-inner{
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 8 8'%3e%3cpath d='M1.5 0l-.5.5v7l.5.5h6l.5-.5v-7l-.5-.5h-6zm5 1v5l-4-2.5z'/%3e%3c/svg%3e");
+    filter: invert(2) grayscale(0%) brightness(200%);
+  }
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 8 8'%3e%3cpath d='M1.5 0l-.5.5v7l.5.5h6l.5-.5v-7l-.5-.5h-6zm5 1v5l-4-2.5z'/%3e%3c/svg%3e");
+    filter: invert(2) grayscale(0%) brightness(200%);
+  }
+  .carousel-indicators{
+    display: none !important;
+  }
+  .imagenPlaneta{
+    width: 40vw;
+    height: 40vw;
+    transform: translateX(-0.5vw) !important;
+  }
+}
+/* acerca de legatto */
+.acercaInicioContainer{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .acercaInicioContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.imgAcercaDe{
+  flex-grow: 1;
+  width: 53vw;
+  height: 35vw;
+  padding: 2vw;
+}
+.textoContainerAcercaInicio{
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.textoContainerAcercaInicio *{
+  padding: 2vw;
+}
+.btn-primario{
+  background-color: $color-primario !important;
+  border-color: $color-primario !important;
+}
+.btn-primario:hover{
+  background-color: #e5690a !important;
+}
+.preinscribiteContainerPadre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row{
+  justify-content: center;
+}
+/* frase suzuki */
+.suzukiContainerPadre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.suzukiContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 10vw;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../Images/suzuki.jpeg");
+}
+.suzukiContainer p{
+  padding: 2vw;
+  color: white;
+  font-size: 1.6vw;
+}
+/* Opiniones */
+.opinionesContainer{
+  margin: 5vw !important;
+}
+.img-opiniones{
+  padding: 3vw !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Contadores */
+.contadorContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contadores{
+  background-color: #e5690a;
+  width: 9vw;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  border-radius: 100%;
+}
+.contadorGrupo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contadorGrupo p{
+  text-align: center;
+  font-size: 3vw;
+  padding: 1vw;
+  margin-bottom: 0;
+}
+/* Alerta */
+.alerta{
+  background-color: $color-primario !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textoAlerta{
+  color: white !important;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}

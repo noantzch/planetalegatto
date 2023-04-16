@@ -1,0 +1,9 @@
+Sí, es posible mostrar la última publicación de Instagram o Facebook de una cuenta en una página web y que se actualice automáticamente.
+
+Ambas plataformas ofrecen API (interfaces de programación de aplicaciones) que permiten acceder a los datos de las cuentas, incluyendo las publicaciones más recientes. Para acceder a estas API, se necesita obtener un token de acceso (en el caso de Instagram) o una clave de API (en el caso de Facebook) y utilizarla en la solicitud de datos.
+
+Una vez que se tiene acceso a los datos de la cuenta, se pueden mostrar las publicaciones más recientes en la página web utilizando lenguajes como JavaScript, PHP o Python.
+
+Para hacer que la información se actualice automáticamente en la página web, se puede utilizar un temporizador que llame a la API de Instagram o Facebook cada cierto tiempo para obtener los datos más recientes. Esto se puede hacer utilizando una función de JavaScript o utilizando una biblioteca externa como jQuery.
+
+Ten en cuenta que el uso de las API de Instagram y Facebook está sujeto a sus términos y condiciones, por lo que es importante leer y cumplir con las políticas de uso antes de utilizar estas herramientas.

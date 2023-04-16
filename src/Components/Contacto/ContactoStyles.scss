@@ -1,0 +1,63 @@
+/* COLORES */
+$color-primario: #fb9403;
+$color-1: #3F84FA;
+$color-2: #03cb8f;
+$color-3:#9cc624;
+$color-4:#fb9403;
+$color-5: #F9245F;
+/* FUENTES */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2') format('woff2');
+}
+*{
+font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+.formularioContainer{
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.siguenos {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+  .siguenosIcons{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+  }
+  .siguenosRedS{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .containerIcon{
+    border-radius: 100% !important;
+    background-color: $color-primario !important;
+    width: 6em !important;
+    padding: 1em !important;
+  }
+  .redesIcon{
+    color: white !important;
+    font-size: 4em !important;
+  }
+  .mapaContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
