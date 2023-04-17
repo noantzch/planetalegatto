@@ -20,7 +20,7 @@ const Navbar2 = () => {
               <Link to="/Contacto" className="navbar2-btn" id="nav-btn5">Contacto</Link>
           </div>
       </div>
-      <Navbar bg="light" expand="md" className='navbarMobile fixed-top'>
+      <Navbar bg="light" expand="md" className='navbarMobile'>
         <div> </div>
         <Navbar.Brand href="#">
             <img className='logoHeader' src={logo} alt='logo'></img>

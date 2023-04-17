@@ -36,7 +36,7 @@ const Planetas = () => {
             <div className='cartel'>
               <h2 className='tituloPlaneta'>Estimulación Temprana</h2>
             </div>
-            <p className='textoPlaneta'> ¡Actividades divertidas que brindan beneficios cognitivos, auditivos y emocionales para un crecimiento integral!</p>
+            <p className='textoPlaneta'> ¡Actividades que brindan beneficios cognitivos, auditivos y emocionales para un crecimiento integral!</p>
           </div>
           <div className='planeta' id='planeta2'>
             <div className='cartel'>
