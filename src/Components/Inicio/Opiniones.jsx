@@ -6,8 +6,8 @@ const Opiniones = () => {
   return (
     <div className='opinionesContainer row'>
     <div className='col-sm-12 col-md-4'>
-      <Card>
-        <Card.Body className='card-opiniones'>
+      <Card className='card-opiniones'>
+        <Card.Body>
           <Card.Title as="h3">Profe John</Card.Title>
           <Card.Img variant="top" src={niño} className='img-opiniones' />
           <Card.Text>
@@ -24,7 +24,7 @@ const Opiniones = () => {
       </Card>
     </div>
     <div className='col-sm-12 col-md-4'>
-      <Card>
+      <Card className='card-opiniones'>
         <Card.Body className='card-opiniones'>
           <Card.Title as="h3">Pedrito</Card.Title>
           <Card.Img variant="top" src={niño} className='img-opiniones' />
@@ -42,7 +42,7 @@ const Opiniones = () => {
       </Card>
     </div>
     <div className='col-sm-12 col-md-4'>
-      <Card>
+      <Card className='card-opiniones'>
         <Card.Body className='card-opiniones'>
           <Card.Title as="h3">Carlitos</Card.Title>
           <Card.Img variant="top" src={niño} className='img-opiniones'/>
