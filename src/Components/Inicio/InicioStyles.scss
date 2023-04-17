@@ -196,12 +196,12 @@ footer h6{
   .saludo{
     padding: 10vw 10vw;
     h3{
-      font-size: 5vw;
+      font-size: 8vw;
       padding: 1vw;
     }
     p{
       padding: 1vw;
-      font-size: 2.5vw;
+      font-size: 4vw;
     }
   }
 }
@@ -339,27 +339,27 @@ footer h6{
   }
   .planeta{
     margin-top: 14vh ;
-    margin-left: 6vh;
-    width: 40vw;
-    height: 40vw;
+    margin-left: -8vh;
+    width: 70vw;
+    height: 70vw;
 
   }
   .planeta:hover{
     transform: none;
   }
   .cartel{
-    width: 16vw;
-    height: 20vw;
-    transform: translate(-2vh, -8vh);
+    width: 26vw;
+    height: 32vw;
+    transform: translate(-2vh, -12vh);
   }
   .tituloPlaneta{
-    padding-top: 4vw;
-    font-size: 3vw;
+    padding-top: 6vw;
+    font-size: 5vw;
   }
   .textoPlaneta{
-    font-size: 3.5vw;
-    margin-top: 3vw;
-    padding: 1vw;
+    font-size: 7vw;
+    margin-top: 4vw;
+    padding: 7.5vw 2vw;
     transform: translate(-1vh, 10vh) rotate(-12deg);
   }
   .carouselPlanetasInner  .carousel-inner{
@@ -379,25 +379,22 @@ footer h6{
     display: none !important;
   }
   .imagenPlaneta{
-    width: 40vw;
-    height: 40vw;
+    width: 70vw;
+    height: 70vw;
     transform: translateX(-0.5vw) !important;
   }
 }
 @media (max-width: 450px) {
-.planeta{
-  margin: 8vw 3vw;
-}
-.cartel{
-  transform: translateY(-9vw);
-}
-  .textoPlaneta{
-    font-size: 3vw;
-    margin-top: 1vw;
-    padding: 1vw;
-    transform: translate(-1vh, 5vh) rotate(-12deg);
+  .cartel{
+    transform: translate(-2vh, -6vh);
+  }
+  .planeta{
+    margin-top: 8vh ;
+    margin-left: -5vh;
+
   }
 }
+
 /* acerca de legatto */
 .acercaInicioContainer{
   display: flex;
