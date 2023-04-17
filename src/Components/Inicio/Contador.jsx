@@ -34,14 +34,14 @@ export default function ContadorI() {
         <div className='contadorGrupo'>
             <p>Más de </p>
             <div className="contadores">
-                <Contador inicial={0} limite={50} intervalo={100} />
+                <Contador inicial={0} limite={50} intervalo={25} />
             </div>
             <p>alumnos.</p>
         </div>
         <div className='contadorGrupo'>
             <p>Más de </p>
             <div className="contadores">
-                <Contador inicial={0} limite={30} intervalo={80}  />
+                <Contador inicial={0} limite={30} intervalo={40}  />
             </div>
             <p>conciertos. </p>
         </div>

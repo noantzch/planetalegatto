@@ -24,6 +24,9 @@ const InicioContainer = () => {
       </div>
       <Planetas /> 
       <AcercaDeLegatto showButton={true} />
+      <div className='frasemedia'>
+        <h4>Algun lema o frase importante</h4>
+      </div>
       <Preinscribete />
       <Suzuki />
       <Opiniones />
