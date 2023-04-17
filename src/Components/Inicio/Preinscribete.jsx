@@ -6,7 +6,7 @@ const Preinscribete = () => {
     <div className='preinscribiteContainerPadre p-2'>
         <h2>¡Preinscríbete!</h2>
         <div className="row p-2">
-            <div className="col-md-6 col-lg-4 mb-4 m-5">
+            <div className="col-md-6 col-lg-4 mb-4 m-5 cardClase">
                 <Card>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x200.png" />
                     <Card.Body>
@@ -18,7 +18,7 @@ const Preinscribete = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="col-md-6 col-lg-4 mb-4 m-5">
+            <div className="col-md-6 col-lg-4 mb-4 m-5 cardClase">
                 <Card>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x200.png" />
                     <Card.Body>
@@ -30,7 +30,7 @@ const Preinscribete = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="col-md-6 col-lg-4 mb-4 m-5">
+            <div className="col-md-6 col-lg-4 mb-4 m-5 cardClase">
                 <Card>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x200.png" />
                     <Card.Body>
@@ -42,7 +42,7 @@ const Preinscribete = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="col-md-6 col-lg-4 mb-4 m-5">
+            <div className="col-md-6 col-lg-4 mb-4 m-5 cardClase">
                 <Card>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x200.png" />
                     <Card.Body>

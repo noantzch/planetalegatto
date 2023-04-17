@@ -454,10 +454,22 @@ footer h6{
   justify-content: center;
   align-items: center;
 
-  background-image: url("../../Images/fondo.png");
+  background-image: url('../../Images/fondomusical1.png'), url('../../Images/fondomusical2.jpg');
+  background-position: left top, right top;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  background-size: 18vw;
+  @media (max-width: 768px) {
+    background-image: url('../../Images/fondomusical2.jpg');
+    background-size: 40vw;
+    background-position: right center;
+    padding-top: 3vw;
+  }
+} 
+.cardClase{
+  @media (max-width: 768px) {
+    max-width: 70vw !important;
+  }
 }
 .row{
   justify-content: center;
@@ -547,14 +559,4 @@ footer h6{
   color: white !important;
   text-shadow: 1px 1px 5px black;
   text-align: center;
-}
-.frasemedia{
-  background-color: $color-1;
-  h4{
-    text-align: center;
-    padding: 2vw;
-    font-size: 3vw;
-    font-family: "Rancho";
-    color: white;
-  }
 }
