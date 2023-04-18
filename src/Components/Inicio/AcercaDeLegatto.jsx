@@ -12,8 +12,8 @@ const AcercaDeLegatto = ({ showButton }) => {
     <div className='acercaInicioContainer'>
         <img className='imgAcercaDe' alt='Acerca de Nostros' src={acercaDe} ></img>
         <div className='textoContainerAcercaInicio'>
-            <h3>Acerca de Legatto</h3>
-            <p>¡Bienvenidos a Legatto! Somos una academia de música para niños, especializada en el método Suzuki y con una larga trayectoria en la organización de conciertos. Ofrecemos una amplia variedad de programas y clases de música, en un ambiente cálido y acogedor. <br></br><br></br> ¡Únete a nuestra comunidad musical hoy mismo!</p>
+            <h3>Acerca de <span>Legatto</span></h3>
+            <p>Somos una academia de música para niños, especializada en el método Suzuki y con una larga trayectoria en la organización de conciertos. Ofrecemos una amplia variedad de programas y clases de música, en un ambiente cálido y acogedor. <br></br><br></br> ¡Únete a nuestro planeta musical hoy mismo!</p>
             {showButton && <Button variant="primary" className="btn-primario"> <Link to="/QuienesSomos" onClick={ handleClick}>Leer más</Link></Button>}
         </div>
 

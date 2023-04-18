@@ -401,6 +401,7 @@ footer h6{
 .acercaInicioContainer{
   padding-top: 0vw;
   padding-bottom: 8vw;
+  margin-bottom: 4vw;
   display: flex;
   flex-direction: row;
 
@@ -408,6 +409,14 @@ footer h6{
   background-repeat: no-repeat;
   background-position: bottom right; 
   background-size: 20vw; 
+  span{
+    color: $color-primario;
+    padding: 0;
+  }
+  h3{
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
 }
 @media (max-width: 768px) {
   .acercaInicioContainer{
@@ -415,6 +424,9 @@ footer h6{
     justify-content: center;
     align-items: center;
     padding-top: 12vw;
+    h3{
+      font-size: 6vw;
+    }  
   }
 }
 
@@ -423,6 +435,7 @@ footer h6{
   width: 53vw;
   height: 35vw;
   padding: 2vw;
+  border-radius: 4vw;
   @media (max-width: 768px){
     width: 95%;
     height: auto;
@@ -448,12 +461,14 @@ footer h6{
 .btn-primario:hover{
   background-color: #e5690a !important;
 }
+
+/* preinscribete */
 .preinscribiteContainerPadre{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding-top: 6vw ;
   background-image: url('../../Images/fondomusical1.png'), url('../../Images/fondomusical2.jpg');
   background-position: left top, right top;
   background-repeat: no-repeat;
@@ -462,13 +477,38 @@ footer h6{
   @media (max-width: 768px) {
     background-image: url('../../Images/fondomusical2.jpg');
     background-size: 40vw;
-    background-position: right center;
+    background-position: right top;
     padding-top: 3vw;
   }
+  h2{
+    font-size: 4.7vw;
+    color: #fb9403;
+    text-shadow: 4px 4px 6px rgba(135, 135, 135, 0.375);
+    font-family: "Rancho";
+    @media (max-width: 768px) {
+      font-size: 12vw;
+    }
+  }
+  .card{
+    height: 30em;
+  }
 } 
-.cardClase{
+.card-body{
+  height: 14em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   @media (max-width: 768px) {
-    max-width: 70vw !important;
+    height: 13em;
+  }
+}
+
+.cardClase{
+  width: 24vw !important;
+  @media (max-width: 768px) {
+    width: 70vw !important;
+    height: auto !important;
   }
 }
 .row{
@@ -505,35 +545,33 @@ footer h6{
   }
 }
 /* Opiniones */
-.card-opiniones{
-  max-width: 20vw !important;
-  @media (max-width: 768px) {
-    max-width: 70vw !important;
-    margin: 3vw;
-  }
-}
 .opinionesContainer{
-  margin: 5vw !important;
+  padding: 5em;
+  img{
+    width: 12em;
+  }
+  .card-body{
+    height: auto;
+  }
+  .card{
+    border: none;
+    margin-bottom: 2em;
+  }
+
 }
-.img-opiniones{
-  padding: 3vw !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 /* Contadores */
 .contadorContainer{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 4vw;
 }
 .contadores{
-  background-color: #e5690a;
   width: 9vw;
   text-align: center;
-  color: white;
+  color: orange;
   font-size: 6vw;
-  border-radius: 100%;
 }
 .contadorGrupo{
   display: flex;
@@ -544,7 +582,7 @@ footer h6{
 .contadorGrupo p{
   text-align: center;
   font-size: 3vw;
-  padding: 1vw;
+  padding: 0vw;
   margin-bottom: 0;
 }
 /* Alerta */
