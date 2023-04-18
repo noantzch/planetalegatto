@@ -6,6 +6,7 @@ import "../Components/QuienesSomos/QuienesSomosStyles.scss"
 import AcercaDeLegatto from '../Components/Inicio/AcercaDeLegatto';
 import Directora from '../Components/QuienesSomos/Directora';
 import Profesores from '../Components/QuienesSomos/Profesores';
+import Historia from '../Components/QuienesSomos/Historia';
 
 const QuienesSomos = () => {
   return (
@@ -14,8 +15,9 @@ const QuienesSomos = () => {
       <img alt='concierto' src={portadaQuienesSomos} className='quienesPortada'></img>
       <h1 className='text-center p-3 m-3'>Quienes Somos</h1>
       <AcercaDeLegatto showButton={false} />
+      <Historia />
       <Directora />
-      <h2 className='text-center p-3 m-3'>Nuestro Staff</h2>
+      <h2 className='nuestrostaff'>Nuestro Staff</h2>
       <Profesores />
       <Footer />
     </div>

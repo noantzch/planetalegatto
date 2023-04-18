@@ -5,6 +5,7 @@ $color-2: #03cb8f;
 $color-3:#9cc624;
 $color-4:#fb9403;
 $color-5: #F9245F;
+
 /* FUENTES */
 @font-face {
   font-family: 'Poppins';
@@ -25,6 +26,16 @@ font-family: 'Poppins', sans-serif;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    *{
+        padding: 1em;
+    }
+    @media (max-width: 768px) {
+        padding: none;
+        flex-direction: column-reverse;
+        *{
+            padding: 1em;
+        }
+    }
 }
 .textoDirectora{
     display: flex;
@@ -37,4 +48,43 @@ font-family: 'Poppins', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+.historia{
+    background-color: $color-primario;
+    padding: 4em;
+    font-size: 1.3em;
+    color: white;
+    font-style: italic;
+    @media (max-width: 768px) {
+        padding: 2em;
+    }
+}
+.nuestrostaff{
+    text-align: center;
+    padding: 0.5em;
+    padding-bottom: 0;
+    font-size: 4em;
+    font-family: "Rancho";
+    color: $color-primario;
+}
+
+
+.cardProfes{
+    color: white;
+    text-shadow: 3px 3px 10px black;
+    border-radius: 2vw;
+    background-color: $color-primario !important;
+    h3{
+        font-weight: 700;
+        font-size: 2em;
+        font-family: "Rancho";
+        margin-bottom: 0;
+    }
+    img{
+        margin: 1em;
+        border-radius: 1vw;
+    }
+    h5{
+        font-style: italic;
+    }
 }

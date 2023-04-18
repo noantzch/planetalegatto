@@ -3,29 +3,55 @@ import './Inicio/InicioStyles.scss';
 import {AiFillFacebook} from "react-icons/ai";
 import {AiFillInstagram} from "react-icons/ai";
 import {RiWhatsappFill} from "react-icons/ri";
+import logoBlanco from "../Images/logoWhite.png";
+import { Link } from 'react-router-dom';
+
+
 const Footer = () => {
+
+        const handleScrollTop = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
   return (
     <footer>
         <div>
-            <h6>Educando con Amor</h6>
+            <br></br>
+            <img alt='logo' src={logoBlanco} className='logoHeader'></img>
         </div>
+        <ul className='barraFooter'>
+            <Link to="/" onClick={handleScrollTop}>Inicio</Link>
+            <Link to="/QuienesSomos" onClick={handleScrollTop}>Quienes Somos</Link>
+            <Link to="/Galeria" onClick={handleScrollTop}>Galeria</Link>
+            <Link to="/Servicios" onClick={handleScrollTop}>Servicios</Link>
+            <Link to="/Contacto" onClick={handleScrollTop}>Contacto</Link>
+        </ul>
         <hr></hr>
         <div className='redesFooterContainer'>
             <div className='redesFooter'>
-                <AiFillFacebook className='redesIcon' />
+                <a href='https://www.facebook.com/legatto.educandoconamor' target='_blank' rel="noreferrer">
+                    <AiFillFacebook className='redesIcon' />
                 <p>Fb/Legatto</p>
+                </a>
             </div>
             <div className='redesFooter'>
-                <AiFillInstagram className='redesIcon' />
-                <p>@Legatto</p>
+                <a href='https://www.instagram.com/legatto.educandoconamor/' target='_blank' rel="noreferrer">
+                    <AiFillInstagram className='redesIcon' />
+                    <p>@Legatto</p>
+                </a>
             </div>
             <div className='redesFooter'>
-                <RiWhatsappFill className='redesIcon' />
-                <p>3874444444</p>
+                <a href="https://wa.me/543875915583?" target="_blank" rel="noopener noreferrer">
+                    <RiWhatsappFill className='redesIcon' />
+                    <p>3875915583</p>
+                </a>
             </div>
         </div>
         <hr></hr>
-        <p>Desarrolado por @Noel Antezana</p>
+        <p className='desarrolado'>Desarrolado por @Noel Antezana</p>
     </footer>
   )
 }

@@ -3,12 +3,10 @@ import directora from "../../Images/estimulacion1.jpg"
 import { Button } from 'react-bootstrap';
 const Directora = () => {
   return (
-    <div className='directoraContainer p-5 m-5'>
+    <div className='directoraContainer m-5'>
         <div className='textoDirectora'>
             <h3>Abigail Posadas</h3>
             <h6>Directora General de Legatto</h6>
-            <br></br>
-            <br></br>
             <p>"Alguna Frase Motivadora...."</p>
         </div>
         <div className='imgDirectoraContainer'>

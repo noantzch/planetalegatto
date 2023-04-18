@@ -158,14 +158,38 @@ footer h6{
   text-shadow: 2px 2px 2px rgb(63, 63, 63);
   color: white;
 }
+.barraFooter{
+  padding-top: 1em;
+  *{
+    padding: 1em;
+    font-size: 1.5em;
+  }
+  a:hover{
+      text-shadow: 3px 3px 6px grey;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    *{
+      padding: 0.3em;
+      font-size: 1em;
+    }
+  }
+}
 .redesFooterContainer{
   display: flex;
   flex-direction: row;
+  a:hover{
+    text-shadow: 3px 3px 6px grey;
+}
 }
 .redesFooter{
+  text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 1vw 3vw;
+  padding: 0vw 3vw;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -174,6 +198,14 @@ footer h6{
 }
 .redesIcon{
   font-size: 3em;
+}
+.desarrolado{
+  font-size: 0.8em;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 /* saludo */
 .saludo{
@@ -572,6 +604,9 @@ footer h6{
   text-align: center;
   color: orange;
   font-size: 6vw;
+  @media (max-width: 768px) {
+    font-size: 8vw;
+  }
 }
 .contadorGrupo{
   display: flex;
@@ -584,6 +619,9 @@ footer h6{
   font-size: 3vw;
   padding: 0vw;
   margin-bottom: 0;
+  @media (max-width: 768px) {
+    font-size: 7vw;
+  }
 }
 /* Alerta */
 .alerta{
