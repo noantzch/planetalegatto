@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar2 from '../Components/Navbar2'
 import Footer from '../Components/Footer'
 import Estimulacion from '../Components/Galeria/Estimulacion'
+import NavbarL from '../Components/NavBar'
 
 const Galeria = () => {
   return (
     <div>
-      <Navbar2 />
+      <NavbarL />
       <h2 className='text-center p-4 m-4'>Estimulación Temprana</h2>
       <Estimulacion />
       <h2 className='text-center p-4 m-4'>Clases de Instrumento</h2>

@@ -1,26 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Inicio/InicioStyles.scss';
-import Header from './Header';
 import { Navbar, Nav } from 'react-bootstrap';
-import logo from "../Images/logo.png";
-
-
-
-const Navbar2 = () => {
+import logo from "../Images/logo.png"
+const NavbarL = () => {
   return (
     <div>
-      <Header/>
-      <div className='navbarContainer2'>
-          <div className='navbar2'>
-              <Link to="/" className="navbar2-btn" id="nav-btn1">Inicio</Link>
-              <Link to="/QuienesSomos" className="navbar2-btn" id="nav-btn2">Quienes Somos</Link>
-              <Link to="/Galeria" className="navbar2-btn" id="nav-btn3">Galería</Link>
-              <Link to="/Servicios" className="navbar2-btn" id="nav-btn4">Servicios</Link>
-              <Link to="/Contacto" className="navbar2-btn" id="nav-btn5">Contacto</Link>
-          </div>
-      </div>
-      <Navbar bg="light" expand="md" className='navbarMobile'>
+        <nav className="navbarL">
+        <Link to="/" className="navbar__logo"><img src={logo} alt='logo' className='logoHeader'></img> </Link>
+        <ul className="navbar__menu">
+            <li className="navbar__menu-item"><Link to="/">INICIO</Link></li>
+            <li className="navbar__menu-item"><Link to="/QuienesSomos">QUIENES SOMOS</Link></li>
+            <li className="navbar__menu-item"><Link to="/Galeria">GALERIA</Link></li>
+            <li className="navbar__menu-item"><Link to="/Servicios">SERVICIOS</Link></li>
+            <li className="navbar__menu-item"><Link to="/Contacto">CONTACTOS</Link></li>
+        </ul>
+        </nav>
+        <Navbar bg="light" expand="md" className='navbarMobile'>
         <div> </div>
         <Navbar.Brand href="#">
             <img className='logoHeader' src={logo} alt='logo'></img>
@@ -36,9 +32,8 @@ const Navbar2 = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
     </div>
-  )
-}
+  );
+};
 
-export default Navbar2
+export default NavbarL;

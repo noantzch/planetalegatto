@@ -20,103 +20,64 @@
   display: flex;
   flex-direction: column;
 }
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 /* NAVBAR */
-.navbarContainer2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: -20px;
-}
-.navbar2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  transform: translateY(20px);
-  z-index: 99;
-}
-.navbar2-btn{
-  padding: 12px 31px;
-  margin: 0 20px;
-  font-size: 23px;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-  border-radius: 10px;
-}
-@media  (max-width: 1024px) {
-  .navbar2-btn{
-    padding: 9px 17px;
-    font-size: 21px;
-    margin: 0 13px;
-  }
-}
-.navbar2-btn:hover{
-  transform: translateY(-6px);
-  color: white;
-}
-#nav-btn1{
-  background-color: $color-1;
-}
-#nav-btn2{
-  background-color: $color-2;
-}
-#nav-btn3{
-  background-color: $color-3
-}
-#nav-btn4{
-  background-color: $color-4;
-}
-#nav-btn5{
-  background-color: $color-5;
-}
 .navbarMobile{
   display: none !important;
-}
-
-@media (max-width:768px) {
-  .navbarMobile{
+  @media (max-width: 768px) {
     display: flex !important;
-    max-width: 100vw !important;
   }
-  .nav-link{
-    text-align: center;
-
-  }
-  .navbarContainer2{
-    display: none;
-  }
-  .headerContainer{
-    display: none !important;
-  }
-}
-.navbar{
-  --bs-navbar-padding-y: 0;
 }
 .navlinkmobile{
   color: black !important;
+  text-align: center;
 }
-/* HEADER */
-.headerContainer{
+.navbarL {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.119);
 }
-.redesHeaderContainer{
+
+.navbar__menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  list-style: none;
+  margin: 0 2em;
+  padding: 0;
 }
-.redesHeader{
-  font-size: 2.5em;
-  color: $color-primario;
-  margin: 0 0.5em;
+
+.navbar__menu-item {
+  margin-left: 1.5em;
 }
+
+.navbar__menu-item:first-child {
+  margin-left: 0;
+}
+
+.navbar__menu-item:hover > a {
+  border-bottom: 2px solid $color-primario;
+  text-shadow: 0.1px 0.1px 5px rgba(128, 128, 128, 0.205);
+}
+
+.navbar__menu-item > a {
+  font-size: 1.1em;
+  font-family: 'Libre Franklin', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black !important;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease-in;
+}
+
+
 .logoHeader{
-  width: 10em;
-  margin-bottom: 0.2em;
+  width: 7em;
+  margin: 0 2em;
 }
 .telefonoHeader{
   font-size: 2.5em;
