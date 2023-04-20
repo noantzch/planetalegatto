@@ -11,6 +11,7 @@ const Navbar2 = () => {
   return (
     <div>
       <Header/>
+      <p>cambiar</p>
       <div className='navbarContainer2'>
           <div className='navbar2'>
               <Link to="/" className="navbar2-btn" id="nav-btn1">Inicio</Link>

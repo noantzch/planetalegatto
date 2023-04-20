@@ -22,12 +22,12 @@ const Planetas = () => {
       imgREf.current.style.display = 'none';
     }
   return (
-    <div style={{position: 'relative'}} onMouseMove={manejarMovimientoMouse}>
+    <div style={{position: 'relative'}} onMouseMove={manejarMovimientoMouse} className='planetasEstrellas'>
       <img src={coheteImg} alt="Cohete" style={{
         position: 'absolute',
         left: (posicionCohete.x - 50)+ 'px',
         top: (posicionCohete.y + 40)+ 'px',
-        width: "40px",
+        width: "50px",
       }} className='cohete' />
       <div className='planetasContainer' >
           <div className='planeta' id='planeta1' onMouseOver={() => showImg()} onMouseOut={() => stopShow()} onClick={() => showImg()}>

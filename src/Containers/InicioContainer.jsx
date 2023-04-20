@@ -27,7 +27,7 @@ const InicioContainer = () => {
       <Preinscribete />
       <Suzuki />
       <Opiniones />
-      <ContadorI/>
+      {/* <ContadorI/> */}
       <Footer /> 
     </div>
   )
