@@ -16,16 +16,19 @@ function FormularioContacto() {
 
   return (
     <form onSubmit={handleSubmit} className='formularioContainer'>
+      <h2>¡Escríbenos!</h2>
+      <div className='formTextos'>
+
       <label>
-        Nombre:
+        Nombre: <br></br>
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label>
-        Edad:
+        Edad:<br></br>
         <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
       </label>
       <label>
-        Tengo dudas sobre:
+        Tengo dudas sobre:<br></br>
         <select value={questionType} onChange={(e) => setQuestionType(e.target.value)}>
           <option value="">--Selecciona una opción--</option>
           <option value="Estimulación Temprana">Estimulación Temprana</option>
@@ -36,10 +39,11 @@ function FormularioContacto() {
         </select>
       </label>
       <label>
-        Escribe aquí tu duda:
+        Escribe aquí tu duda:<br></br>
         <input type="text" value={question} onChange={(e) => setQuestion(e.target.value)} />
       </label>
-      <button type="submit">Enviar</button>
+      <button type="submit" className='btn btn-primary btn-primario'>Enviar</button>
+      </div>
     </form>
   );
 }

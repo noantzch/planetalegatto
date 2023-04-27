@@ -28,7 +28,7 @@ const Preinscribete = () => {
                     <Card.Body className='cardBodyClaseTexto'>
                         <Card.Title style={{ textAlign: 'center' }}>Clases de Instrumentos</Card.Title>
                         <Card.Text style={{ textAlign: 'center'}}>
-                            ¡Clase semanal personalizada del instrumento que eligas! <br></br>Que podrás complementar con teoría o practica orquestal
+                            ¡Clase semanal personalizada del instrumento que eligas! Que podrás complementar con teoría o practica orquestal
                         </Card.Text>
                         <Button variant="primary" className='btn-primario'>
                             <a href="https://wa.me/+543875915583?text=Hola!%20Estoy%20interesado%20en%20Clases%20de%20Instrumento%20:)" target='_blank' rel="noreferrer">Preinscríbete</a>

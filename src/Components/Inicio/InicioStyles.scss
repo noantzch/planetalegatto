@@ -40,8 +40,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: #fff;
-  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.119);
+  background: white;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar__menu {
@@ -52,7 +53,7 @@
 }
 
 .navbar__menu-item {
-  margin-left: 1.5em;
+  padding-left: 3em;
 }
 
 .navbar__menu-item:first-child {
@@ -60,44 +61,27 @@
 }
 
 .navbar__menu-item:hover > a {
-  border-bottom: 2px solid $color-primario;
+  border-bottom: 2px solid orange;
   text-shadow: 0.1px 0.1px 5px rgba(128, 128, 128, 0.205);
 }
 
 .navbar__menu-item > a {
-  font-size: 1.1em;
-  font-family: 'Libre Franklin', sans-serif;
-  text-transform: capitalize;
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: black !important;
+  color: rgba(36, 36, 36, 0.878) !important;
   border-bottom: 2px solid transparent;
   transition: all 0.4s ease-in;
 }
 
 
 .logoHeader{
-  width: 7em;
+  width: 8vw;
   margin: 0 2em;
 }
-.telefonoHeader{
-  font-size: 2.5em;
-  color: $color-primario;
-}
-@media  (max-width: 1024px) {
-  .logoHeader{
-    width: 10em;
-  }
-  .telefonoHeader{
-    font-size: 2em;
-  }
-  .redesHeader{
-    font-size: 2em;
-  }
-}
+
 @media (max-width: 768px) {
-  .navbar{
-  padding: 0;
-  }
+
   .logoHeader{
     width: 6em;
     margin-left: 3em;
@@ -466,6 +450,7 @@ footer h6{
   justify-content: center;
   align-items: center;
   padding-top: 6vw ;
+  padding-bottom: 6vw;
   background-image: url('../../Images/fondomusical1.png'), url('../../Images/fondomusical2.jpg');
   background-position: left top, right top;
   background-repeat: no-repeat;
@@ -502,7 +487,7 @@ footer h6{
 }
 
 .cardClase{
-  width: 24vw !important;
+  width: 23vw !important;
   @media (max-width: 768px) {
     width: 70vw !important;
     height: auto !important;

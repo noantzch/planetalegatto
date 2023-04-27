@@ -9,11 +9,11 @@ const NavbarL = () => {
         <nav className="navbarL">
         <Link to="/" className="navbar__logo"><img src={logo} alt='logo' className='logoHeader'></img> </Link>
         <ul className="navbar__menu">
-            <li className="navbar__menu-item"><Link to="/">INICIO</Link></li>
-            <li className="navbar__menu-item"><Link to="/QuienesSomos">QUIENES SOMOS</Link></li>
-            <li className="navbar__menu-item"><Link to="/Galeria">GALERIA</Link></li>
-            <li className="navbar__menu-item"><Link to="/Servicios">SERVICIOS</Link></li>
-            <li className="navbar__menu-item"><Link to="/Contacto">CONTACTOS</Link></li>
+            <li className="navbar__menu-item"><Link to="/">Inicio</Link></li>
+            <li className="navbar__menu-item"><Link to="/QuienesSomos">Quienes Somos</Link></li>
+            <li className="navbar__menu-item"><Link to="/Galeria">Galería</Link></li>
+            <li className="navbar__menu-item"><Link to="/Servicios">Servicios</Link></li>
+            <li className="navbar__menu-item"><Link to="/Contacto">Contacto</Link></li>
         </ul>
         </nav>
         <Navbar bg="light" expand="md" className='navbarMobile'>

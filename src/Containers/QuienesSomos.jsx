@@ -13,7 +13,6 @@ const QuienesSomos = () => {
     <div>
       <NavbarL />
       <img alt='concierto' src={portadaQuienesSomos} className='quienesPortada'></img>
-      <h1 className='text-center p-3 m-3'>Quienes Somos</h1>
       <AcercaDeLegatto showButton={false} />
       <Historia />
       <Directora />
