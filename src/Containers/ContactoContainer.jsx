@@ -10,6 +10,7 @@ const ContactoContainer = () => {
     <div>
         <NavbarL />
         <FormularioContacto />
+        <hr style={{border: '2px solid orange', margin: "0"} } />
         <Redes />
         <Mapa />
         <Footer />

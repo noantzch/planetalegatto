@@ -33,20 +33,17 @@ const Footer = () => {
         <div className='redesFooterContainer'>
             <div className='redesFooter'>
                 <a href='https://www.facebook.com/legatto.educandoconamor' target='_blank' rel="noreferrer">
-                    <AiFillFacebook className='redesIcon' />
-                <p>Fb/Legatto</p>
+                    <AiFillFacebook className='redesIconF' />                
                 </a>
             </div>
             <div className='redesFooter'>
                 <a href='https://www.instagram.com/legatto.educandoconamor/' target='_blank' rel="noreferrer">
-                    <AiFillInstagram className='redesIcon' />
-                    <p>@Legatto</p>
+                    <AiFillInstagram className='redesIconF' />
                 </a>
             </div>
             <div className='redesFooter'>
                 <a href="https://wa.me/543875915583?" target="_blank" rel="noopener noreferrer">
-                    <RiWhatsappFill className='redesIcon' />
-                    <p>3875915583</p>
+                    <RiWhatsappFill className='redesIconF' />
                 </a>
             </div>
         </div>
