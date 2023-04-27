@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Components/Footer';
-import portadaQuienesSomos from "../../src/Images/slide.jpg";
+import portadaQuienesSomos from "../../src/Images/quienesP.jpg";
 import "../Components/QuienesSomos/QuienesSomosStyles.scss" 
 import AcercaDeLegatto from '../Components/Inicio/AcercaDeLegatto';
 import Directora from '../Components/QuienesSomos/Directora';

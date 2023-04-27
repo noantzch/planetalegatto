@@ -142,8 +142,11 @@ footer h6{
   align-content: center;
   color: white;
 }
-.redesIcon{
+.redesIconF{
   font-size: 3em;
+  @media (max-width: 768px) {
+    font-size: 2em !important;
+  }
 }
 .desarrolado{
   font-size: 0.8em;
@@ -393,10 +396,13 @@ footer h6{
   span{
     color: $color-primario;
     padding: 0;
+    font-family: "Rancho";
+
   }
   h3{
     font-size: 2.5vw;
     font-weight: 600;
+    font-family: "Rancho";
   }
 }
 @media (max-width: 768px) {
@@ -416,6 +422,7 @@ footer h6{
   width: 53vw;
   height: 35vw;
   padding: 2vw;
+  transform: translateY(4vw);
   border-radius: 4vw;
   @media (max-width: 768px){
     width: 95%;
@@ -527,8 +534,22 @@ footer h6{
   }
 }
 /* Opiniones */
+
+.row{
+  --bs-gutter-x: 0 !important;
+}
+
 .opinionesContainer{
-  padding: 5em;
+  padding: 2em;
+  p{
+    padding: 0.4em;
+  }
+  h5{
+    padding: 0.4em;
+  }
+  @media (max-width: 768px) {
+    padding: 0em;
+  }
   img{
     width: 12em;
   }

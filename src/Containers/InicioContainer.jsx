@@ -20,6 +20,7 @@ const InicioContainer = () => {
           Nuestras clases están llenas de actividades divertidas e interactivas que ayudan a desarrollar una base musical sólida y habilidades esenciales para la vida.</p>
       </div>
       <Planetas /> 
+      <hr style={{border: '2px solid orange', margin: "0"} } />
       <AcercaDeLegatto showButton={true} />
       <Preinscribete />
       <Suzuki />
