@@ -1,20 +1,17 @@
 import React from 'react'
 import Footer from '../Components/Footer' 
-import Navbar2 from '../Components/Navbar2'
 import CarouselInicio from '../Components/Inicio/CarouselInicio'
 import Planetas from '../Components/Inicio/Planetas'
 import AcercaDeLegatto from '../Components/Inicio/AcercaDeLegatto'
 import Preinscribete from '../Components/Inicio/Preinscribete'
 import Suzuki from '../Components/Inicio/Suzuki'
 import Opiniones from '../Components/Inicio/Opiniones'
-import ContadorI from '../Components/Inicio/Contador'
-import Alerta from '../Components/Inicio/Alert'
+import NavbarL from '../Components/NavBar'
 
 const InicioContainer = () => {
   return (
     <div className='inicioContainer'>
-      <Navbar2 />
-      <Alerta />
+      <NavbarL />
       <CarouselInicio />
       <div className='saludo'>
         <h3>¡Bienvenidos!</h3>
@@ -27,7 +24,6 @@ const InicioContainer = () => {
       <Preinscribete />
       <Suzuki />
       <Opiniones />
-      {/* <ContadorI/> */}
       <Footer /> 
     </div>
   )
