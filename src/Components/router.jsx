@@ -7,6 +7,8 @@ import QuienesSomos from "../Containers/QuienesSomos";
 import Galeria from "../Containers/GaleriaContainer";
 import ServiciosContainer from "../Containers/ServiciosContainer";
 import ContactoContainer from "../Containers/ContactoContainer";
+import Pagina from "../Containers/Pagina";
+import CalendarioContainer from "../Containers/CalendarioContainer";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
             {
                 path: "/Contacto",
                 element: <ContactoContainer />
+            },
+            {
+                path: "/Calendario",
+                element: <CalendarioContainer />
+            },
+            {
+                path: "/TiendaLegatto",
+                element: <Pagina />
             }
         ]
     }
