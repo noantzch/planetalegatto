@@ -5,7 +5,7 @@ function Mapa() {
   const AnyReactComponent = () => <FaMapMarkerAlt color="orange" size={32} />;
   return (
     <div className="mapaContainer">     
-        <h4>Encuentranos en la calle Güemes 1050</h4>  
+        <h4>Encuentranos en la calle Güemes 1182</h4>  
         <div style={{ height: "30em", width: "50em", padding: "2em 4em" }}>
         
         <GoogleMapReact
