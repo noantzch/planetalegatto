@@ -107,11 +107,11 @@ font-family: 'Poppins', sans-serif;
 }
 .cardProfes{
     color: white;
-    margin: 4vw;
+    margin: 3.8vw;
     border-radius: 2vw;
     h3{
         font-weight: 700;
-        font-size: 2em;
+        font-size: 1.5em;
         font-family: "Rancho";
         margin-bottom: 0;
     }
@@ -124,10 +124,56 @@ font-family: 'Poppins', sans-serif;
         }
     }
     h5{
-        font-style: italic;
-        font-size: 1.3em;
+        
+        font-size: 1em;
+        padding: 0;
+        margin: 0 0.1em;
+        text-align: center;
     }
     p{
-        font-size: 1em;
+        font-size: 0.8em;
+        font-style: italic;
+        text-align: justify;
+    }
+}
+.profesC{
+    .col-md-4{
+        margin: 0;
+    }
+    padding: 0;
+    @media (max-width: 2000px) { 
+        .card-body{
+            height: 32.6vw;
+        }
+    }
+    @media (max-width: 1600px) { 
+        .card-body{
+            height: 38.3vw;
+        }
+    }
+    @media (max-width: 1350px) { 
+        .card-body{
+            height: 44.3vw;
+        }
+    }
+    @media (max-width: 1200px) { 
+        .card-body{
+            height: 49vw;
+        }
+    }
+    @media (max-width: 1080px) { 
+        .card-body{
+            height: 58vw;
+        }
+    }
+    @media (max-width: 941px) { 
+        .card-body{
+            height: 79.5vw;
+        }
+    }
+    @media (max-width: 768px) { 
+        .card-body{
+            height: auto;
+        }
     }
 }
