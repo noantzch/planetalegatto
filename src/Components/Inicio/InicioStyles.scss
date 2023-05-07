@@ -110,6 +110,8 @@
   }
 }
 
+/* carousel */
+
 /* FOOTER */
 footer{
   background-color: orange;
@@ -170,13 +172,26 @@ footer h6{
     font-size: 2em !important;
   }
 }
+.hrFooter{
+  background-color: rgb(216, 141, 1);
+  border: none;
+  height: 0.1vw;
+  width: 100%;
+  margin: 0;
+  margin-top: 2vw;
+  z-index: 99;
+}
 .desarrolado{
-  font-size: 0.8em;
-  margin-bottom: 0;
+  font-size: 0.6em;
+  margin: 0;
+  margin-top: 0;
   text-align: center;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: orange;
+  color: rgba(159, 102, 37, 0.575);
+  a:hover{
+    color:rgb(63, 63, 63) !important;
+  }
 }
 /* saludo */
 .saludo{

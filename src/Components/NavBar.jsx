@@ -15,7 +15,6 @@ const NavbarL = () => {
             <li className="navbar__menu-item" id="serviciosLink">
               <Link to="/Servicios">Servicios</Link>
                 <ul id="serviciosList">
-                  <li className='navbar__menu-item'><Link to="/Calendario" className='serviciosItems'>Calendario</Link></li>
                   <li className='navbar__menu-item'><Link to="/Servicios" className='serviciosItems'>Cursos</Link></li>
                   <li className='navbar__menu-item'><Link to="/TiendaLegatto" className='serviciosItems'>Tienda Legatto</Link></li>
                 </ul>

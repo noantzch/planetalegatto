@@ -1,0 +1,11 @@
+
+.custom-calendar {
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 768px) {
+        margin: 0 !important;
+        height: auto !important;
+    }
+}

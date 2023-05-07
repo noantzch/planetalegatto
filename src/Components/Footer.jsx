@@ -47,8 +47,8 @@ const Footer = () => {
                 </a>
             </div>
         </div>
-        <hr></hr>
-        <p className='desarrolado'>Desarrolado por @Noel Antezana</p>
+        <hr className='hrFooter'></hr>
+        <p className='desarrolado'><a href='https://github.com/noantzch' target='_blank' rel="noreferrer">Desarrollado por Noel Antezana</a></p>
     </footer>
   )
 }

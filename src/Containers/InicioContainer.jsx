@@ -7,6 +7,7 @@ import Preinscribete from '../Components/Inicio/Preinscribete'
 import Suzuki from '../Components/Inicio/Suzuki'
 import Opiniones from '../Components/Inicio/Opiniones'
 import NavbarL from '../Components/NavBar'
+import Calendario from '../Components/Calendario'
 
 const InicioContainer = () => {
   return (
@@ -23,6 +24,8 @@ const InicioContainer = () => {
       <hr style={{border: '2px solid orange', margin: "0"} } />
       <AcercaDeLegatto showButton={true} />
       <Preinscribete />
+      <hr style={{color: "orange", margin: "0", marginBottom: "2vw"}}></hr>
+      < Calendario />
       <Suzuki />
       <Opiniones />
       <Footer /> 
