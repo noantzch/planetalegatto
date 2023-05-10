@@ -12,9 +12,6 @@
     font-weight: 400;
     src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2') format('woff2');
   }
-*{
-  font-family: 'Poppins', sans-serif;
-}
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 .inicioContainer{
   display: flex;
@@ -132,7 +129,7 @@ footer h6{
   padding-top: 1em;
   *{
     padding: 1em;
-    font-size: 1.5em;
+    font-size: 1.5vw;
   }
   a:hover{
       text-shadow: 3px 3px 6px grey;
@@ -641,16 +638,4 @@ footer h6{
     font-size: 7vw;
   }
 }
-/* Alerta */
-.alerta{
-  background-color: $color-primario !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.textoAlerta{
-  color: white !important;
-  text-shadow: 1px 1px 5px black;
-  text-align: center;
-}
+
