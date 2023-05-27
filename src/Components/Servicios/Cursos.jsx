@@ -160,7 +160,7 @@ const Cursos = () => {
                     <Card.Title>1° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$5.000</h3>
+                            <h3>$6.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento
@@ -180,7 +180,7 @@ const Cursos = () => {
                     <Card.Title>2° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$7.000</h3>
+                            <h3>$9.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento
@@ -202,7 +202,7 @@ const Cursos = () => {
                     <Card.Title>3° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$8.000</h3>
+                            <h3>$12.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento

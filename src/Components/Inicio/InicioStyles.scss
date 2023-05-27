@@ -63,39 +63,17 @@
 }
 
 .navbar__menu-item > a {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: rgba(36, 36, 36, 0.878) !important;
   border-bottom: 2px solid transparent;
   transition: all 0.4s ease-in;
 }
-#serviciosList{
-  display: none;
-  position: absolute;
-  z-index: 2;
-  background-color: white;
-  padding: 1em  1em;
-  li{
-    list-style: none;
-    padding-left: 0 !important;
-  }
-  a{
-    color: black !important;
-    font-size: 1.2vw;
-  }
-}
-#serviciosLink{
-  display: relative;
-  &:hover{
-    #serviciosList{
-      display: block;
-    }
-  }
-}
+
 
 .logoHeader{
-  width: 8vw;
+  width: 6vw;
   margin: 0 2em;
 }
 
@@ -223,6 +201,7 @@ footer h6{
 /* planetas */
 .planetasEstrellas{
   background-image: url("../../Images/estrellas.jpg");
+
 }
 .planetasContainer{
   margin: 9vw;
@@ -235,7 +214,7 @@ footer h6{
     ". planeta2 . planeta4 " ;
   padding-top: 60px;
   padding-bottom: 0px;
-  cursor: none;
+
   padding-left: 7vh;
   padding-right: 3vh;
 }
@@ -269,13 +248,13 @@ footer h6{
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el fondo del elemento */
   background-position: center center;
   text-align: center;
-  width: 20vw;
-  height: 20vw;
+  width: 18vw;
+  height: 18vw;
   z-index: 1;
   transition: transform 0.5s ease;
 }
 .planeta:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 #planeta1 {
   grid-area:planeta1; 
@@ -306,7 +285,7 @@ footer h6{
 
 .tituloPlaneta{
   color: black;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   text-align: center;
   font-family: 'Rancho', cursive;
   padding-top: 2vw;
@@ -317,8 +296,8 @@ footer h6{
 }
 .cartel{
   position: absolute;
-  width: 11vw;
-  height: 14vw;
+  width: 10vw;
+  height: 12vw;
   background-image: url("../../Images/cartel.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,21 +308,42 @@ footer h6{
 .textoPlaneta{
   color: white;
   text-shadow: 5px 5px 7px rgb(67, 67, 67);
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-family: 'Rancho';
   margin: 5vw 1vw;  
-  transform: translate(-0.3vw) rotate(-12deg);
-  line-height: 0.9;
+  transform: translate(-0.5vw) rotate(-12deg);
+  line-height: 1;
 }
-
+.pimg{
+  z-index: 99;
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 7px rgb(67, 67, 67);
+  font-size: 1.6vw;
+  font-family: 'Rancho';
+  margin: 5vw 1vw; 
+  padding: 0.1em; 
+  background-color: orange;
+  border-radius: 1em;
+  transform: translate(0.5vw, 7vw) rotate(-12deg);
+  line-height: 0.8;
+  @media (max-width:768px) {
+    max-width: 65vw !important;
+    transform: translate(2vw, 35vw) rotate(-12deg);
+    font-size: 1.2em;
+  }
+}
 .imagenPlaneta{
-  width: 20.2vw;
-  height: 20.2vw;
+  width: 19vw;
+  height: 19vw;
   object-fit: cover;
   position: absolute;
   border-radius: 100%;
   z-index: 5;
-  transform: translateX(-0.1vw);
+  transform: translateX(-10vw);
+  @media (max-width:768px) {
+    transform: translateX(50vw);
+  }
 }
 .carouselPlanetas{
   display: none;
@@ -399,11 +399,12 @@ footer h6{
   .imagenPlaneta{
     width: 70vw;
     height: 70vw;
-    transform: translateX(-0.5vw) !important;
+    transform: translateX(-36vw) !important;
   }
 }
 @media (max-width: 450px) {
   .cartel{
+    z-index: 999;
     transform: translate(-2vh, -6vh);
   }
   .planeta{
@@ -417,16 +418,11 @@ footer h6{
 
 /* acerca de legatto */
 .acercaInicioContainer{
-  padding-top: 0vw;
-  padding-bottom: 8vw;
+  padding: 2em;
   margin-bottom: 4vw;
   display: flex;
   flex-direction: row;
-
-  background-image: url('../../Images/astronauta.png');
-  background-repeat: no-repeat;
-  background-position: bottom right; 
-  background-size: 20vw; 
+ 
   span{
     color: $color-primario;
     padding: 0;
@@ -434,7 +430,7 @@ footer h6{
 
   }
   h3{
-    font-size: 2.5vw;
+    font-size: 2.5em;
     font-weight: 600;
     font-family: "Rancho";
   }
@@ -445,9 +441,6 @@ footer h6{
     justify-content: center;
     align-items: center;
     padding-top: 12vw;
-    h3{
-      font-size: 6vw;
-    }  
   }
 }
 
@@ -456,7 +449,6 @@ footer h6{
   width: 53vw;
   height: 35vw;
   padding: 2vw;
-  transform: translateY(4vw);
   border-radius: 4vw;
   @media (max-width: 768px){
     width: 95%;
@@ -469,6 +461,20 @@ footer h6{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  p {
+    font-size: 1.5em;
+  }
+  a{
+    font-size: 1.3em;
+  }
+  @media (max-width: 768px) {
+    p{
+      font-size: 1em;
+    }
+    a{
+      font-size: 1em;
+    }
+  }
 }
 .textoContainerAcercaInicio *{
   padding: 2vw;
@@ -639,3 +645,135 @@ footer h6{
   }
 }
 
+.astronautasContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em;
+  padding-bottom: 6em;
+  @media (max-width:768px) {
+    padding: 0;
+    margin: 2.5vw;
+    display: block;
+    flex-wrap: none;
+    justify-content: none;
+    align-items:none ;
+
+  }
+  div{
+    background-color: orange;
+    border-radius: 2em;
+  
+    width: 20vw;
+    height: 20vw;
+    @media(max-width: 768px){
+      width: 100%;
+      height: 70vh;
+      margin: 0;
+      padding: 0;
+    }
+    margin: 2em 3em;
+    padding: 1em;
+    box-shadow: 2px 2px 10px black;
+    transition: all ease-in-out 0.5s;
+    &:hover{
+      transform:scale(1.05)
+    }
+  }
+  img{
+    width: 11vw;
+    @media(max-width: 768px){
+      width: 50vw;
+    }
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    @media(max-width: 768px){
+      padding: 1em;
+    }
+  }
+  h4{
+    padding: 0em;
+    margin: 0;
+    font-family: "Rancho";
+    font-size: 2em;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+  }
+}
+.desktop{
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.mobile{
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.centradocontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.h2cards{
+  color: orange;
+  margin: 1em !important;
+  background-color: white;
+  width: fit-content;
+  font-family: "Rancho";
+  font-weight: 900;
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+  text-shadow: 2px 2px 4px white;
+  @media (max-width: 768px) {
+      font-size: 7vw;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      padding-top: 1em;
+      margin: 0 !important;
+      }
+}
+.instruMobile{
+  display: none;
+  @media (max-width:768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  span{
+    color: orange;
+    font-weight: 900;
+  }
+}
+.astronautaCardMobile{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1em 0;
+  background: white;
+  img{
+    margin: 1em;
+    width: 40vw;
+  }
+  p{
+    width: 50% !important;
+    align-self: center;
+    padding: 1em;
+    font-size: 4vw;
+    text-align: center;
+  }
+}

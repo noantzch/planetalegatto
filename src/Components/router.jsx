@@ -4,7 +4,6 @@ import InicioContainer from "../Containers/InicioContainer";
 
 import Root from "./rout";
 import QuienesSomos from "../Containers/QuienesSomos";
-import Galeria from "../Containers/GaleriaContainer";
 import ServiciosContainer from "../Containers/ServiciosContainer";
 import ContactoContainer from "../Containers/ContactoContainer";
 import Pagina from "../Containers/Pagina";
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
             {
                 path: "/QuienesSomos",
                 element: <QuienesSomos />
-            },
-            {
-                path: "/Galeria",
-                element: <Galeria />
             },
             {
                 path: "/Servicios",

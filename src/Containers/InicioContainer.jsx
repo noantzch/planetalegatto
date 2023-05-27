@@ -23,6 +23,7 @@ const InicioContainer = () => {
       <Planetas /> 
       <hr style={{border: '2px solid orange', margin: "0"} } />
       <AcercaDeLegatto showButton={true} />
+      <hr style={{border: '2px solid orange', margin: "0"} } />
       <Preinscribete />
       <hr style={{color: "orange", margin: "0", marginBottom: "2vw"}}></hr>
       < Calendario />

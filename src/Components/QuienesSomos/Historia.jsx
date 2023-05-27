@@ -2,7 +2,14 @@ import React from 'react'
 
 const Historia = () => {
   return (
-    <p className='historia'>Hace año y medio, un grupo de músicos decidieron fundar una academia de cuerdas para compartir su pasión y experiencia con otros músicos en formación. Con un enfoque en la enseñanza de violín, viola y violonchelo, la academia ha crecido rápidamente, atrayendo a estudiantes de todas las edades y niveles. Los maestros han creado un ambiente amigable y colaborativo, donde los estudiantes pueden desarrollar su técnica y musicalidad, mientras experimentan la alegría de hacer música juntos. Con una programación emocionante y una comunidad vibrante, la academia de cuerdas promete seguir creciendo en los próximos años.</p>
+<div>
+      <p className='historia'>
+        La Academia de cuerdas Legatto, nació por la petición de padres de los alumnos de la Clases de Violín de la Profesora Emilse Posadas en Octubre del 2021.<br></br><br></br>
+        De esta manera, la Profesora decide iniciar con su emprendimiento personal y el dia 10 de Diciembre del 2021 da apertura a la Academia con su primer concierto “Nuevos Talentos” en el Teatro de la Fundación Salta, a cargo de su directora y fundadora Emilse Posadas. <br></br><br></br>
+        <span>Legatto</span> es una palabra italiana que se refiere a la union de sonidos. <br></br><br></br>
+        Para nosotros Legatto es la union de vidas con la musica, con nuestro lema <span>"educando con amor"</span>, ya que creemos que sin amor nada podemos hacer.
+      </p>
+    </div>
   )
 }
 
