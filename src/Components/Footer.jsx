@@ -25,8 +25,8 @@ const Footer = () => {
         <ul className='barraFooter'>
             <Link to="/" onClick={handleScrollTop}>Inicio</Link>
             <Link to="/QuienesSomos" onClick={handleScrollTop}>Quienes Somos</Link>
-            <Link to="/Galeria" onClick={handleScrollTop}>Galeria</Link>
-            <Link to="/Servicios" onClick={handleScrollTop}>Servicios</Link>
+            <Link to="/Servicios" onClick={handleScrollTop}>Cursos</Link>
+            <Link to="/TiendaLegatto" onClick={handleScrollTop}>Tienda Legatto</Link>
             <Link to="/Contacto" onClick={handleScrollTop}>Contacto</Link>
         </ul>
         <hr></hr>

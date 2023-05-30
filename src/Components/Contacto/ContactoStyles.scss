@@ -49,6 +49,10 @@ $color-5: #F9245F;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    a{
+      color: black !important;
+      text-align: center;
+    }
   }
   .containerIcon{
     border-radius: 100% !important;

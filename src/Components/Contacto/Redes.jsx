@@ -12,16 +12,20 @@ const Redes = () => {
 
       <div className='siguenosIcons'>
         <div className='siguenosRedS'>
+          <a href='https://www.facebook.com/legatto.educandoconamor' target='_blank' rel="noreferrer">
           <div className='containerIcon'>
             <AiFillFacebook className='redesIcon' />
           </div>
-          <p className='titulosActive'>/legatto</p>
+            
+            /Legatto</a>
         </div>
         <div className='siguenosRedS'>
-          <div className='containerIcon'>
+
+            <a href='https://www.instagram.com/legatto.educandoconamor/' target='_blank' rel="noreferrer">
+            <div className='containerIcon'>
             <AiOutlineInstagram className='redesIcon' />
             </div>
-          <p className='titulosActive'>@legatto</p>
+              @Legatto</a>
         </div>
       </div>
     </div>

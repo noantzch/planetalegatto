@@ -9,6 +9,8 @@ const ContactoContainer = () => {
   return (
     <div>
         <NavbarL />
+        <hr style={{border: '2px solid orange', margin: "0"} } />
+
         <FormularioContacto />
         <hr style={{border: '2px solid orange', margin: "0"} } />
         <Redes />
