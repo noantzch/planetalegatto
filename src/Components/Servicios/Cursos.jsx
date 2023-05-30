@@ -90,7 +90,7 @@ const Cursos = () => {
                     <Card.Title>1° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$5.000</h3>
+                            <h3>$6.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento
@@ -110,7 +110,7 @@ const Cursos = () => {
                     <Card.Title>2° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$7.000</h3>
+                            <h3>$9.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento
@@ -132,7 +132,7 @@ const Cursos = () => {
                     <Card.Title>3° Promo</Card.Title>
                     <Card.Text>
                         <div className='precio'>
-                            <h3>$8.000</h3>
+                            <h3>12.000</h3>
                             <h5>Mensual</h5>
                         </div>
                         <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Instrumento
@@ -219,7 +219,72 @@ const Cursos = () => {
                 </Card.Body>
                 </Card>
             </div>
-            
+           </div> 
+            <h4>Talleres Grupales</h4>
+            <div className='cursosContainer'>
+                <div className="cardCursos" >
+                    <Card>
+                    <Card.Img variant="top" src={adulto} className='imgCardClase'/>
+                    <Card.Body>
+                        <Card.Title>Iniciación Musical</Card.Title>
+                        <Card.Text>
+                            <div className='precio'>
+                                <h3>$3.000</h3>
+                                <h5>Mensual</h5>
+                            </div>
+                            <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal Grupal (Niños de 3 a 6 años)
+                            <br></br>
+                            <BsFillCheckSquareFill className='checkSquare'/> Participación en eventos de la Academia
+                        </Card.Text>
+                        <Button variant="primary" className='btn-primario'>
+                                <a href="https://wa.me/+543875915583?text=Hola!%20Estoy%20interesado%20en%20Clases%20de%20Instrumento%20:)"  target='_blank' rel="noreferrer">Preinscríbete</a>
+                            </Button>
+                    </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardCursos" >
+                    <Card>
+                    <Card.Img variant="top" src={adulto} className='imgCardClase'/>
+                    <Card.Body>
+                        <Card.Title>Música y Movimiento para Niños</Card.Title>
+                        <Card.Text>
+                            <div className='precio'>
+                                <h3>$4.000</h3>
+                                <h5>Mensual</h5>
+                            </div>
+                            <BsFillCheckSquareFill className='checkSquare'/> 2 Clases Semanales Grupales (4 a 10 años)
+                            <br></br>
+                            <BsFillCheckSquareFill className='checkSquare'/> Participación en eventos de la Academia
+                        </Card.Text>
+                        <Button variant="primary" className='btn-primario'>
+                                <a href="https://wa.me/+543875915583?text=Hola!%20Estoy%20interesado%20en%20Clases%20de%20Instrumento%20:)"  target='_blank' rel="noreferrer">Preinscríbete</a>
+                            </Button>
+                    </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardCursos" >
+                    <Card>
+                    <Card.Img variant="top" src={adulto} className='imgCardClase'/>
+                    <Card.Body>
+                        <Card.Title>Coro para Niños</Card.Title>
+                        <Card.Text>
+                            <div className='precio'>
+                                <h3>$6.000</h3>
+                                <h5>Mensual</h5>
+                            </div>
+                            <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal Grupal
+                            <br></br>
+                            <BsFillCheckSquareFill className='checkSquare'/> 1 Clase Semanal de Teoría Musical
+                            <br></br>
+                            <BsFillCheckSquareFill className='checkSquare'/> Participación en eventos de la Academia
+                        </Card.Text>
+                        <Button variant="primary" className='btn-primario'>
+                                <a href="https://wa.me/+543875915583?text=Hola!%20Estoy%20interesado%20en%20Clases%20de%20Instrumento%20:)"  target='_blank' rel="noreferrer">Preinscríbete</a>
+                            </Button>
+                    </Card.Body>
+                    </Card>
+                </div>
+        
         </div>
     </div>
 )}

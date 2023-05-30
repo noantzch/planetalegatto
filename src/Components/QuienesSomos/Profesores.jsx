@@ -34,7 +34,7 @@ const Profesores = () => {
 
               <Card.Img variant="top" src={joaquin} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Batería</Card.Title>
-              {hoveredIndex === 1 && <p className='pProfes'>"Soy músico, baterísta, mi camino en la música empezó a los 8 años (piano) a la edad de 16 años conocí la batería, y desde allí la elegí para siempre. Me gusta el Jazz Fusión,  y la Música Orquestal. Me entusiasma dejar un legado a través de la música y especialmente a través del ritmo 🎶, nunca sabré a quien le puedo estar cambiando la vida a través de la Música y eso es un viaje de ida 💛"</p>}
+              {hoveredIndex === 1 && <p className='pProfes'>"Soy músico, baterísta, mi camino en la música empezó a los 8 años (piano) a la edad de 16 años conocí la batería, y desde allí la elegí para siempre. Me gusta el Jazz Fusión,  y la Música Orquestal. Me entusiasma dejar un legado a través de la música y especialmente a través del ritmo, nunca sabré a quien le puedo estar cambiando la vida a través de la Música y eso es un viaje de ida "</p>}
             </Card.Body>
           </Card>
         </div>
@@ -75,7 +75,7 @@ const Profesores = () => {
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Camila</Card.Title>
               <Card.Img variant="top" src={camila} className='img-opiniones' />
-              <Card.Title as="h5">Prof. de Expresión Coporal y Secretaria</Card.Title>
+              <Card.Title as="h5">Prof. de Expresión Coporal</Card.Title>
               
               {hoveredIndex === 5 && <p className='pProfes' id="cp5" >                "Mi fascinacion por el movimiento comenzó a los 5 años, exploré  el mundo del folclore,danza clasica, expresion corporal, teatro y disciplinas circenses. Soy una investigadora serial, lo que me lleva a seguir formándome, como docente, bailarina y facilitadora de esta gran herramienta que es el Arte."</p>}
             </Card.Body>
@@ -98,7 +98,9 @@ const Profesores = () => {
               <Card.Img variant="top" src={cinthia} className='img-opiniones' />
               <Card.Title as="h5">Prof. Piano</Card.Title>
               
-              {hoveredIndex === 7 && <p className='pProfes' id="cp7" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 7 && <p className='pProfes' id="cp7" >Soy pianista y tecladista, estudiante del 4to año del profesorado en música. Comencé mi gusto por la música desde muy pequeña y pasé por distintas etapas formativas musicales, participando de música de camara, grupos musicales y conjuntos vocales. 
+Además me encanta la enseñanza musical y el trabajo con los niños y adolescentes. 
+Considero a la música como una forma de expresar lo que sentimos y de decir aquello que a veces con las palabras cuesta.</p>}
             </Card.Body>
           </Card>
         </div>
@@ -108,7 +110,7 @@ const Profesores = () => {
               <Card.Title as="h3">Antonela</Card.Title>
               <Card.Img variant="top" src={anto} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Violín</Card.Title>
-              {hoveredIndex === 8 && <p className='pProfes' id="cp8" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 8 && <p className='pProfes' id="cp8" >Soy violinista, desde los 12 años la música forma parte de mi vida brindandome experiencias y aprendizajes que amo transmitir en mis clases, además del gusto por la música, la cual considero es un medio optimo para formar mejores personas y sujetos que amen lo que hacen.</p>}
             </Card.Body>
           </Card>
         </div>
@@ -118,7 +120,7 @@ const Profesores = () => {
               <Card.Title as="h3">Miguel</Card.Title>
               <Card.Img variant="top" src={miguel} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Cello</Card.Title>
-              {hoveredIndex === 9 && <p className='pProfes' id="cp9" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 9 && <p className='pProfes' id="cp9" >Soy cellista y empece a tocar mi instrumento de pequeño, desde entonces amo el cello y la musica clásica. Estudiar música implica jamás dejar de aprender, por eso, constantemente me sigo formando como cellista, músico y docente. Espero podamos compartir este apasionante camino!</p>}
 
             </Card.Body>
           </Card>
@@ -129,7 +131,7 @@ const Profesores = () => {
               <Card.Title as="h3">Verónica</Card.Title>
               <Card.Img variant="top" src={vero} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Canto y Estimulación Temprana</Card.Title>
-              {hoveredIndex === 10 && <p className='pProfes' id="cp10" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 10 && <p className='pProfes' id="cp10" >Soy tecnica en canto y bajista autodidacta. Desde pequeña mis padres cultivaron amor por la música y eso me llevó a estudiarla. Mi pasión es compartir y cultivar ese mismo amor en mis alumnos y ver cómo esa semilla crece con un poquito de confianza, pasión y esfuerzo.</p>}
 
             </Card.Body>
           </Card>
@@ -140,7 +142,7 @@ const Profesores = () => {
               <Card.Title as="h3">Daniela</Card.Title>
               <Card.Img variant="top" src={dani} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Piano y Teoría</Card.Title>
-              {hoveredIndex === 11 && <p className='pProfes' id="cp1" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 11 && <p className='pProfes' id="cp1" >Soy profesora de piano, canto en coros desde los 12 años y me gusta escuchar toda clase de géneros musicales. Mi momento favorito de las clases  es cuando logramos conectar entre todos y generamos entusiasmo por aprender y mejorar.</p>}
 
             </Card.Body>
           </Card>
@@ -151,7 +153,8 @@ const Profesores = () => {
               <Card.Title as="h3">Joana</Card.Title>
               <Card.Img variant="top" src={joana} className='img-opiniones' />
               <Card.Title as="h5">Prof. Violín</Card.Title>
-              {hoveredIndex === 12 && <p className='pProfes' id="cp2" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 12 && <p className='pProfes' id="cp2" >Soy violinista, estudiante desde los 11 años. Mi amor por la música  me llevo a explorar muchos caminos, desde la música folklórica  hasta las orquestas juveniles. q<br></br>
+ Espero brindar las herramientas necesarias  a través de la creatividad, la motivación y el respeto para que juntos podamos explorar este gran camino.</p>}
 
             </Card.Body>
           </Card>
