@@ -147,11 +147,13 @@ $color-5: #F9245F;
         }
     }
     h5{
-        
-        font-size: 1em;
+        @media(max-width: 768px){
+            font-size: 4vw;
+        }
         padding: 0;
         margin: 0 0.1em;
         text-align: center;
+        font-size: 1.1vw;
     }
     p{
         font-size: 1em;
@@ -172,16 +174,17 @@ $color-5: #F9245F;
 }
 .pProfes{
     height: 14vw;
-    margin-top: 0.2vw;
+    margin-top: 2vw;
     position:absolute;
     z-index: 1 !important;
     font-size: 1vw !important;
-    padding: 1em !important;
+    padding: 0 1em !important;
+    line-height: 1.2;
     @media (max-width:768px) {
-        height: 68vw; 
-        margin-top: 1vw;
-        font-size: 1em !important;
-        padding-top: 2.5em !important;
+        height: 75vw; 
+        margin-top: 1.2vw;
+        font-size: 4vw !important;
+        padding-top: 8vw !important;
     }
     background-color: $color-1;
     color: rgb(255, 255, 255);
