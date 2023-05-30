@@ -45,7 +45,7 @@ const Profesores = () => {
             <Card.Body className='card-opiniones' onMouseOver={() => showText(2)} onMouseOut={hideText} onTouchStart={() => showText(2)} onTouchEnd={hideText}>
               <Card.Title as="h3">Noel</Card.Title>
               <Card.Img variant="top" src={noel} className='img-opiniones' />
-              <Card.Title as="h5">Director de Orquesta, Prof. de Piano y Viola</Card.Title>
+              <Card.Title as="h5">Dir. de Orquesta, Prof. de Piano y Viola</Card.Title>
               {hoveredIndex === 2 && <p className='pProfes' id="cp2" >                "Soy licenciado en artes musicales, toco el violín y piano desde muy pequeño y me encanta la música clásica. Me entusiasma compartir mí pasión por la música a mis alumnos, y en la dirección me encanta unir a todos en un sólo sonido."</p>}
             </Card.Body>
           </Card>
@@ -98,8 +98,7 @@ const Profesores = () => {
               <Card.Img variant="top" src={cinthia} className='img-opiniones' />
               <Card.Title as="h5">Prof. Piano</Card.Title>
               
-              {hoveredIndex === 7 && <p className='pProfes' id="cp7" >Soy pianista y tecladista, estudiante del 4to año del profesorado en música. Comencé mi gusto por la música desde muy pequeña y pasé por distintas etapas formativas musicales, participando de música de camara, grupos musicales y conjuntos vocales. 
-Además me encanta la enseñanza musical y el trabajo con los niños y adolescentes. 
+              {hoveredIndex === 7 && <p className='pProfes' id="cp7" >Soy pianista y tecladista. Comencé mi gusto por la música desde muy pequeña y pasé por distintas etapas formativas musicales, participando de música de camara, grupos musicales y conjuntos vocales. 
 Considero a la música como una forma de expresar lo que sentimos y de decir aquello que a veces con las palabras cuesta.</p>}
             </Card.Body>
           </Card>
@@ -165,7 +164,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
               <Card.Title as="h3">John</Card.Title>
               <Card.Img variant="top" src={john} className='img-opiniones' />
               <Card.Title as="h5">Prof. de Teoría y Guitarra</Card.Title>
-              {hoveredIndex === 13 && <p className='pProfes' id="cp3" >                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci aliquam reiciendis id harum tenetur sint, voluptatem nihil praesentium est repellendus saepe ducimus. Fuga necessitatibus, quos ratione nisi vero dolorem?</p>}
+              {hoveredIndex === 13 && <p className='pProfes' id="cp3" >Desde mis inicios con la música, me ha gustado compartir conocimiento con mis semejantes, amando la música de muchas épocas y de su gran cantidad de géneros y sus perspectivas. Considero que no hay mejor manera de abrir la mente que con esta diciplina tan bella, y no hay mejor instrumento que la Guitarra Eléctrica para fortalecer el carácter.</p>}
 
             </Card.Body>
           </Card>
