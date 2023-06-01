@@ -18,7 +18,7 @@ const NavbarL = () => {
         </nav>
         <Navbar bg="light" expand="md" className='navbarMobile'>
         <div> </div>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
             <img className='logoHeader' src={logo} alt='logo'></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
