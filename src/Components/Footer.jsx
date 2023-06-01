@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
         </div>
         <hr className='hrFooter'></hr>
-        <p className='desarrolado'><a href='https://github.com/noantzch' target='_blank' rel="noreferrer">Desarrollado por Noel Antezana</a></p>
+        <p className='desarrolado'><a href='https://www.linkedin.com/in/luis-noel-antezana-chinchilla-6182a4245/' target='_blank' rel="noreferrer">Desarrollado por Noel Antezana</a></p>
     </footer>
   )
 }

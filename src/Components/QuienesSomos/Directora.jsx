@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import abi from "../../Images/abi.jpg";
 const Directora = () => {
   return (
@@ -10,8 +9,7 @@ const Directora = () => {
             <h4>"Alguna Frase Motivadora...."</h4>
         </div>
         <div className='imgDirectoraContainer'>
-            <img alt='directora' src={abi}></img> 
-            <Button variant='primary' className='btn-primario'>Ver Currículum</Button>       
+            <img alt='directora' src={abi}></img>      
         </div>
     </div>
   )

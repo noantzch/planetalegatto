@@ -16,6 +16,9 @@ import john from "../../Images/john.jpg"
 
 const Profesores = () => {
 
+  const handleContextMenu = (event) => {
+    event.preventDefault(); // Previene la apertura del menú contextual
+  };
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const showText = (index) => {
@@ -28,7 +31,7 @@ const Profesores = () => {
   return (
     <div className='opinionesContainer row profesC'>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp1" onMouseOver={() => showText(1)} onMouseOut={hideText} onTouchStart={() => showText(1)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp1" onMouseOver={() => showText(1)} onMouseOut={hideText} onTouchStart={() => showText(1)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Joaquín</Card.Title>
 
@@ -42,7 +45,7 @@ const Profesores = () => {
 
         <div className='col-sm-12 col-md-4'>
           <Card className='cardProfes' id="cp2">
-            <Card.Body className='card-opiniones' onMouseOver={() => showText(2)} onMouseOut={hideText} onTouchStart={() => showText(2)} onTouchEnd={hideText}>
+            <Card.Body className='card-opiniones' onMouseOver={() => showText(2)} onMouseOut={hideText} onTouchStart={() => showText(2)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
               <Card.Title as="h3">Noel</Card.Title>
               <Card.Img variant="top" src={noel} className='img-opiniones' />
               <Card.Title as="h5">Dir. de Orquesta, Prof. de Piano y Viola</Card.Title>
@@ -51,7 +54,7 @@ const Profesores = () => {
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp3"  onMouseOver={() => showText(3)} onMouseOut={hideText} onTouchStart={() => showText(3)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp3"  onMouseOver={() => showText(3)} onMouseOut={hideText} onTouchStart={() => showText(3)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Priscila</Card.Title>
               <Card.Img variant="top" src={pri} className='img-opiniones' />
@@ -61,7 +64,7 @@ const Profesores = () => {
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp4"  onMouseOver={() => showText(4)} onMouseOut={hideText} onTouchStart={() => showText(4)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp4"  onMouseOver={() => showText(4)} onMouseOut={hideText} onTouchStart={() => showText(4)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Rafael</Card.Title>
               <Card.Img variant="top" src={rafa} className='img-opiniones' />
@@ -71,7 +74,7 @@ const Profesores = () => {
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp5"  onMouseOver={() => showText(5)} onMouseOut={hideText} onTouchStart={() => showText(5)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp5"  onMouseOver={() => showText(5)} onMouseOut={hideText} onTouchStart={() => showText(5)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Camila</Card.Title>
               <Card.Img variant="top" src={camila} className='img-opiniones' />
@@ -82,7 +85,7 @@ const Profesores = () => {
           </Card>
         </div>
         <div className='col-sm-12 col-md-4' >
-          <Card className='cardProfes' id="cp6"  onMouseOver={() => showText(6)} onMouseOut={hideText} onTouchStart={() => showText(6)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp6"  onMouseOver={() => showText(6)} onMouseOut={hideText} onTouchStart={() => showText(6)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Gustavo</Card.Title>
               <Card.Img variant="top" src={gustavo} className='img-opiniones' />
@@ -92,7 +95,7 @@ const Profesores = () => {
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp7"  onMouseOver={() => showText(7)} onMouseOut={hideText} onTouchStart={() => showText(7)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp7"  onMouseOver={() => showText(7)} onMouseOut={hideText} onTouchStart={() => showText(7)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Cinthia</Card.Title>
               <Card.Img variant="top" src={cinthia} className='img-opiniones' />
@@ -104,7 +107,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp8"  onMouseOver={() => showText(8)} onMouseOut={hideText} onTouchStart={() => showText(8)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp8"  onMouseOver={() => showText(8)} onMouseOut={hideText} onTouchStart={() => showText(8)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Antonela</Card.Title>
               <Card.Img variant="top" src={anto} className='img-opiniones' />
@@ -114,7 +117,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp9"  onMouseOver={() => showText(9)} onMouseOut={hideText} onTouchStart={() => showText(9)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp9"  onMouseOver={() => showText(9)} onMouseOut={hideText} onTouchStart={() => showText(9)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Miguel</Card.Title>
               <Card.Img variant="top" src={miguel} className='img-opiniones' />
@@ -125,7 +128,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp10"  onMouseOver={() => showText(10)} onMouseOut={hideText} onTouchStart={() => showText(10)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp10"  onMouseOver={() => showText(10)} onMouseOut={hideText} onTouchStart={() => showText(10)} onTouchEnd={hideText}onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Verónica</Card.Title>
               <Card.Img variant="top" src={vero} className='img-opiniones' />
@@ -136,7 +139,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp1"  onMouseOver={() => showText(11)} onMouseOut={hideText} onTouchStart={() => showText(11)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp1"  onMouseOver={() => showText(11)} onMouseOut={hideText} onTouchStart={() => showText(11)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Daniela</Card.Title>
               <Card.Img variant="top" src={dani} className='img-opiniones' />
@@ -147,7 +150,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp2"  onMouseOver={() => showText(12)} onMouseOut={hideText} onTouchStart={() => showText(12)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp2"  onMouseOver={() => showText(12)} onMouseOut={hideText} onTouchStart={() => showText(12)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Joana</Card.Title>
               <Card.Img variant="top" src={joana} className='img-opiniones' />
@@ -159,7 +162,7 @@ Considero a la música como una forma de expresar lo que sentimos y de decir aqu
           </Card>
         </div>
         <div className='col-sm-12 col-md-4'>
-          <Card className='cardProfes' id="cp3"  onMouseOver={() => showText(13)} onMouseOut={hideText} onTouchStart={() => showText(13)} onTouchEnd={hideText}>
+          <Card className='cardProfes' id="cp3"  onMouseOver={() => showText(13)} onMouseOut={hideText} onTouchStart={() => showText(13)} onTouchEnd={hideText} onContextMenu={handleContextMenu}>
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">John</Card.Title>
               <Card.Img variant="top" src={john} className='img-opiniones' />

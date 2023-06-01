@@ -10,8 +10,14 @@ import bateria from "../../Images/astronauta_bateria.png";
 import estimu from "../../Images/estimu.jpg";
 import grupal from "../../Images/grupal.jpg";
 import instru from "../../Images/clasesdeinstrumento.jpeg";
-import orq from "../../Images/orquesta.jpeg"
+import orq from "../../Images/orquesta.jpeg";
+
 const Planetas = () => {
+
+  const handleContextMenu = (event) => {
+    event.preventDefault(); // Previene la apertura del menú contextual
+  };
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const showImage = (index) => {
@@ -54,7 +60,7 @@ const Planetas = () => {
           <p className='textoPlaneta'>Con la dirección de nuestros profesionales, podrás mejorar tus habilidades y tocar junto a otros músicos.</p>
         </div>
       </div>
-      <div className='carouselPlanetas'>
+      <div className='carouselPlanetas' onContextMenu={handleContextMenu}>
         <Carousel className='carouselPlanetasInner' interval={null}>
         <Carousel.Item  >
           <div className='planeta' id='planeta1' onTouchStart={() => showImage(1)} onTouchEnd={hideImage}>
