@@ -6,7 +6,9 @@ const Directora = () => {
         <div className='textoDirectora'>
             <h3>Emilce Posadas</h3>
             <h6>Directora General de Legatto</h6>
-            <h4>"Alguna Frase Motivadora...."</h4>
+            <h4>"La musica es la forma mas amable de conectar con los niños .
+Una educacion musical basada en amor, es capaz de formar mejores seres humanos, al servicio de la comunidad.
+"</h4>
         </div>
         <div className='imgDirectoraContainer'>
             <img alt='directora' src={abi}></img>      
