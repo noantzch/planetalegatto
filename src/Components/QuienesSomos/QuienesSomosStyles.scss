@@ -25,6 +25,23 @@ $color-5: #F9245F;
     justify-content: space-around;
     align-items: center;
     padding: 2em;
+    h6{
+        font-size: 1.5em;
+        font-weight: 200;
+        @media (max-width:768px) {
+            font-size: 1em;
+        }
+    }
+    h4{
+        padding: 1em 10em;
+        font-style: italic;
+        line-height: 1.5;
+        text-align: center;
+        @media (max-width:768px) {
+            padding: 1em 0.5em;
+            font-size: 1.1em;
+        }
+    }
     *{
         padding: 1em;
     }
