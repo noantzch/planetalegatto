@@ -4,9 +4,9 @@ import {AiOutlineInstagram} from 'react-icons/ai';
 const Redes = () => {
   return (
     <div>
-        <div class="siguenos">
+        <div className="siguenos">
         <hr className='title-line'></hr>
-          <h3 class="titulosActive textoCentrado">Siguenos en redes</h3>
+          <h3 className="titulosActive textoCentrado">Siguenos en redes</h3>
         <hr className='title-line'></hr>
       </div>
 

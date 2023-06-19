@@ -7,6 +7,7 @@ import QuienesSomos from "../Containers/QuienesSomos";
 import ServiciosContainer from "../Containers/ServiciosContainer";
 import ContactoContainer from "../Containers/ContactoContainer";
 import Pagina from "../Containers/Pagina";
+import PayForm from "./Servicios/PayForm";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
             {
                 path: "/TiendaLegatto",
                 element: <Pagina />
-            }
+            },
+            {
+                path: "/PayForm/:id",
+                element: <PayForm />
+            },
         ]
     }
 ]);
