@@ -55,7 +55,7 @@ exports.createItem = functions.https.onRequest(async (request, response) => {
     response.status(204).send("");
   } else if (request.method === "POST") {
     const curso = await request.body.curso;
-    const URL = "https://347a-2800-cd0-4a01-8c00-b9e5-827f-ba2a-3455.ngrok-free.app";
+    const URL = "https://planetalegatto-git-mp-noantzch.vercel.app/";
 
     try {
       const preference = await {
