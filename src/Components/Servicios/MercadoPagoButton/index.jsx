@@ -31,7 +31,7 @@ export const MercadoPagoButton = ({ curso }) => {
           throw new Error("El precio no es un número válido");
         }
   
-        const modifiedCurso = {
+        const modifiedCurso = await {
           ...curso,
           description: curso.description ? curso.description.toString() : "",
           unit_price: price,
@@ -40,7 +40,7 @@ export const MercadoPagoButton = ({ curso }) => {
         };
   
         const { data: preference } = await axios.post(
-          "http://localhost:3000/checkout",
+          "https://us-central1-legatto-562eb.cloudfunctions.net/createItem",
           { curso: modifiedCurso }
         );
   
