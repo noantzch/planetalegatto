@@ -4,7 +4,11 @@
   const mercadopago = require("mercadopago");
   const { doc, setDoc, getDocs, collection } = require('firebase/firestore');
   const nodemailer = require('nodemailer');
-
+  const MP_PUBLIC_KEY = functions.config().mp.public_key;
+  const MP_ACCESS_TOKEN = functions.config().mp.access_token;
+  const NODEMAILER_USER = functions.config().nodemailer.user;
+  const NODEMAILER_PASS = functions.config().nodemailer.pass;
+  
 
 const firebaseConfig = {
   apiKey: "AIzaSyAoyYS6Mj7cgCfepvbGzadET4cekzNhpn0",
@@ -19,15 +23,15 @@ const appF = initializeApp(firebaseConfig);
 const db = getFirestore(appF);
 
 mercadopago.configure({
-  access_token: "TEST-5599472120738203-051417-e422149589f0e203733b7812f0ef2aba-183975774"
+  access_token: MP_ACCESS_TOKEN
 });
 
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'noantzch@gmail.com',
-    pass: 'tgnwfognyhnxjoto',
+    user: NODEMAILER_USER,
+    pass: NODEMAILER_PASS
   },
 });
 

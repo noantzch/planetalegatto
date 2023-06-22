@@ -74,3 +74,4 @@ FALTA RESPONSIVE Y AVERIGUAR EL SERVER SI SUBE IGUAL A VERCEL.
 ver paso a paso adaptacion del codigo server.js a firebase functions (index.js)
 backend funcionando en firebase, checkear como usar .env para mi claves api de google. mercado pago y la contraseña de nodemailer
 
+no funciona con vercel checkear y probar con localhost
