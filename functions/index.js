@@ -8,7 +8,16 @@
   const MP_ACCESS_TOKEN = functions.config().mp.access_token;
   const NODEMAILER_USER = functions.config().nodemailer.user;
   const NODEMAILER_PASS = functions.config().nodemailer.pass;
-  
+  // Exportar las variables de entorno
+  exports.googleMapsApiKey = functions.config().googlemaps.apikey;
+  exports.fbApiKey = functions.config().fb.apikey;
+  exports.authDomain = functions.config().fb.authdomain;
+  exports.projectId = functions.config().fb.projectid;
+  exports.storageBucket = functions.config().fb.storagebucket;
+  exports.messagingSenderId = functions.config().fb.messagingsenderid;
+  exports.appId = functions.config().fb.appid;
+  exports.measurementId = functions.config().fb.measurementid;
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAoyYS6Mj7cgCfepvbGzadET4cekzNhpn0",

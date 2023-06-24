@@ -1,5 +1,5 @@
 import GoogleMapReact from "google-map-react";
-import * as functions from 'firebase-functions';
+import { googleMapsApiKey } from "../../../functions";
 import { FaMapMarkerAlt } from "react-icons/fa";
 const googleMapsApiKey = functions.config().googlemaps.apikey;
 function Mapa() {
