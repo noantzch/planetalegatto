@@ -1,5 +1,7 @@
 import GoogleMapReact from "google-map-react";
+import * as functions from 'firebase-functions';
 import { FaMapMarkerAlt } from "react-icons/fa";
+const googleMapsApiKey = functions.config().googlemaps.apikey;
 function Mapa() {
   const location = { lat: -24.78515, lng: -65.41862012055392 };
   const AnyReactComponent = () => <FaMapMarkerAlt color="orange" size={32} />;
@@ -9,7 +11,7 @@ function Mapa() {
         <div style={{ height: "30em", width: "50em", padding: "2em 4em" }}>
         
         <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.GOOGLEMAPS_BOOTSTRAP }}
+            bootstrapURLKeys={{ key: googleMapsApiKey}}
             defaultCenter={location}
             defaultZoom={17}    
         >
