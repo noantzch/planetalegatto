@@ -11,7 +11,7 @@ function Mapa() {
         <div style={{ height: "30em", width: "50em", padding: "2em 4em" }}>
         
         <GoogleMapReact
-            bootstrapURLKeys={{ key: googleMapsApiKey}}
+            bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLEMAPS_BOOTSTRAP}}
             defaultCenter={location}
             defaultZoom={17}    
         >
