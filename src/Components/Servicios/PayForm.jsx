@@ -62,13 +62,15 @@ const PayForm = () => {
         onChange={handleTitleChange}
       />
       {idsAlumnos.includes(newTitle) ? (
+        <>
         <span className="payformcurso__dni-found color-green">✔️<span>DNI ENCONTRADO</span></span>
+        <MercadoPagoButton curso={{ ...curso, title: newTitle }} />
+        </>
       ) : (
         <span className="payformcurso__dni-found color-red">❌<span>DNI NO ENCONTRADO</span></span>
       )}
     </div>
   )}
-  <MercadoPagoButton curso={{ ...curso, title: newTitle }} />
 </div>
 
   )
