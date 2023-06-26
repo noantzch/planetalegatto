@@ -126,24 +126,31 @@ exports.notify = functions.https.onRequest(async (request, response) => {
 
         let apellidoEncontrado = "";
         let nombreEncontrado = "";
-        const alumnoEncontrado = alumnos.find(
-          (alumno) => alumno.dni === payment.body.description
-        );
+        let alumnoEncontrado = null;
+        if (payment.body.description) {
+          alumnoEncontrado = await alumnos.find(
+            (alumno) => alumno.dni === payment.body.description
+          );
+        }
         if (alumnoEncontrado) {
           apellidoEncontrado = alumnoEncontrado.apellido;
           nombreEncontrado = alumnoEncontrado.nombre;
         }
 
         if (paymentStatus === "approved" && !correoEnviado) {
+
           const mailOptions = {
             from: "noantzch@gmail.com",
             to: "noantzch@gmail.com",
-            subject: `Pago Recibido de ${nombreEncontrado} ${apellidoEncontrado}`,
-            text: `Comprobante de pago # ${payment.body.order.id} \n\n El alumno/a ${nombreEncontrado} ${apellidoEncontrado} con DNI: ${payment.body.description} ha pagado $${payment.body.transaction_amount} pesos en la fecha: "${payment.body.date_approved}". Se ha pagado desde el mail: ${payment.body.payer.email}`,
+            subject: alumnoEncontrado ? `Pago Recibido de ${nombreEncontrado} ${apellidoEncontrado}` : `Pago Recibido de la Tienda Legatto: ${payment.body.description}`,
+            text: alumnoEncontrado
+              ? `Comprobante de pago # ${payment.body.order.id} \n\n El alumno/a ${nombreEncontrado} ${apellidoEncontrado} con DNI: ${payment.body.description} ha pagado $${payment.body.transaction_amount} pesos en la fecha: "${payment.body.date_approved}". Se ha pagado desde el mail: ${payment.body.payer.email}`
+              : `Comprobante de pago # ${payment.body.order.id} \n\n ${payment.body.description} ha pagado $${payment.body.transaction_amount} pesos en la fecha: "${payment.body.date_approved}". Se ha pagado desde el mail: ${payment.body.payer.email}`,
           };
 
           const date = payment.body.date_approved.substring(0, 10);
-          await setDoc(doc(db, "comprobantesCursos", payment.body.order.id), {
+          const collectionName = alumnoEncontrado ? "comprobantesCursos" : "recibos";
+          await setDoc(doc(db, collectionName, payment.body.order.id), {
             alumnoDNI: payment.body.description,
             monto: payment.body.transaction_amount,
             payerEmail: payment.body.payer.email,

@@ -6,8 +6,9 @@ import Root from "./rout";
 import QuienesSomos from "../Containers/QuienesSomos";
 import ServiciosContainer from "../Containers/ServiciosContainer";
 import ContactoContainer from "../Containers/ContactoContainer";
-import Pagina from "../Containers/Pagina";
 import PayForm from "./Servicios/PayForm";
+import TiendaLegatto from "../Containers/TiendaLegatto";
+import PayFormProducts from "./Servicios/PayFormProducts";
 
 const router = createBrowserRouter([
     {
@@ -33,11 +34,15 @@ const router = createBrowserRouter([
             },
             {
                 path: "/TiendaLegatto",
-                element: <Pagina />
+                element: <TiendaLegatto />
             },
             {
                 path: "/PayForm/:id",
                 element: <PayForm />
+            },
+            {
+                path: "/PayFormProducts/:id",
+                element: <PayFormProducts />
             },
         ]
     }

@@ -69,9 +69,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-FALTA RESPONSIVE Y AVERIGUAR EL SERVER SI SUBE IGUAL A VERCEL.
-
-ver paso a paso adaptacion del codigo server.js a firebase functions (index.js)
-backend funcionando en firebase, checkear como usar .env para mi claves api de google. mercado pago y la contraseña de nodemailer
-
-no funciona con vercel checkear y probar con localhost
