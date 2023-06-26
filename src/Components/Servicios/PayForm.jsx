@@ -5,6 +5,7 @@ import { db } from '../../Firebase/config';
 import { MercadoPagoButton } from './MercadoPagoButton';
 import "./ServiciosStyles.scss";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { Spinner } from 'react-bootstrap';
 
 const PayForm = () => {
     const id = useParams().id;
@@ -33,6 +34,18 @@ const PayForm = () => {
     }, []);
     const idsAlumnos = alumnos.map(alumno => alumno.id);
     const [newTitle, setNewTitle] = useState('');
+    const [newPrice, setNewPrice] = useState(0);
+
+    useEffect(() => {
+      if (curso) {
+        const calculatedPrice = (parseFloat(curso.price )+ parseFloat(parseFloat(curso.price) * 0.09));
+        setNewPrice(calculatedPrice);
+      }
+    }, [curso]);
+  
+    if (!curso) {
+      return <div> <Spinner /> </div>; // Puedes mostrar un mensaje o componente de carga mientras se obtiene el valor de Firebase
+    }
 
     const handleTitleChange = (e) => {
       setNewTitle(e.target.value);
@@ -47,8 +60,18 @@ const PayForm = () => {
   {curso && (
     <div className="payformcurso__info">
       <p className="payformcurso__info-title">Curso: {curso.title}</p>
-      <p className="payformcurso__info-price">Precio: {curso.price}$</p>
-      <p className="payformcurso__info-description">Descripción: {curso.description}</p>
+      <div className='precio'>
+        <p className="payformcurso__info-price">Precio: {parseFloat(curso.price)}$</p>
+        <p className="preciochico">Costo por transacción digital: {parseFloat(curso.price) * 0.09}$</p>
+        <p className="preciochico total">Total a pagar: {newPrice}$</p>
+      </div>
+      <br></br>
+        <div className='precio'>
+          {curso.description.map(description =>(
+            <p key={description} className="preciochico">{description} </p>
+          )
+          )}
+        </div>
       <p className="payformcurso__info-category">Categoría: {curso.category}</p>
     </div>
   )}
@@ -64,7 +87,7 @@ const PayForm = () => {
       {idsAlumnos.includes(newTitle) ? (
         <>
         <span className="payformcurso__dni-found color-green">✔️<span>DNI ENCONTRADO</span></span>
-        <MercadoPagoButton curso={{ ...curso, title: newTitle }} />
+        <MercadoPagoButton curso={{ ...curso, title: newTitle, price: newPrice}} />
         </>
       ) : (
         <span className="payformcurso__dni-found color-red">❌<span>DNI NO ENCONTRADO</span></span>

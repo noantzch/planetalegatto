@@ -43,3 +43,14 @@ a{
 
     animation: loaderAnimation 5s linear infinite;
 }
+.precio p{
+    margin: 0;
+    padding: 0 !important;
+    color: black ;
+}
+.preciochico{
+    font-size: 0.9em !important;
+}
+.total{
+    font-weight: 700;
+}

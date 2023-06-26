@@ -140,8 +140,8 @@ exports.notify = functions.https.onRequest(async (request, response) => {
         if (paymentStatus === "approved" && !correoEnviado) {
 
           const mailOptions = {
-            from: "noantzch@gmail.com",
-            to: "noantzch@gmail.com",
+            from: NODEMAILER_USER,
+            to: NODEMAILER_USER ,
             subject: alumnoEncontrado ? `Pago Recibido de ${nombreEncontrado} ${apellidoEncontrado}` : `Pago Recibido de la Tienda Legatto: ${payment.body.description}`,
             text: alumnoEncontrado
               ? `Comprobante de pago # ${payment.body.order.id} \n\n El alumno/a ${nombreEncontrado} ${apellidoEncontrado} con DNI: ${payment.body.description} ha pagado $${payment.body.transaction_amount} pesos en la fecha: "${payment.body.date_approved}". Se ha pagado desde el mail: ${payment.body.payer.email}`

@@ -41,11 +41,16 @@ const PayFormProducts = () => {
     const handleTitle = async (e) => {
         setSelectedVariant(e.target.value);
     };
-
-
+    const [newPrice, setNewPrice] = useState(0);
+    useEffect(() => {
+        if (producto) {
+          const calculatedPrice = (parseFloat(producto.price )+ parseFloat(parseFloat(producto.price) * 0.09));
+          setNewPrice(calculatedPrice);
+        }
+      }, [producto]);
     return (
         <div className="payformcurso">
-            <Link to={"/Servicios"} className='btn btn-warning'><AiOutlineArrowLeft /> Volver Legatto</Link>
+            <Link to={"/TiendaLegatto"} className='btn btn-warning'><AiOutlineArrowLeft /> Volver Legatto</Link>
             <div className="payformcurso__header">
                 <h4>Formulario de Pago</h4>
             </div>
@@ -55,7 +60,12 @@ const PayFormProducts = () => {
                 <>
                     <div className="payformcurso__info">
                         <p className="payformcurso__info-title">{producto.title}</p>
-                        <p className="payformcurso__info-price">Precio: {producto.price}$</p>
+                        <br></br>
+                        <div className='precio'>
+                            <p className="payformcurso__info-price">Precio: {parseFloat(producto.price)}$</p>
+                            <p className="preciochico">Costo por transacción digital: {parseFloat(producto.price) * 0.09}$</p>
+                            <p className="preciochico total">Total a pagar: {newPrice}$</p>
+                        </div>
                         <img className='productoimgpayform' src={producto.img} alt='producto'></img>
                         <p className="payformcurso__info-description">Descripción: {producto.description}</p>
                         <p className='payformcurso__info-description'>Talle:</p>
@@ -70,7 +80,7 @@ const PayFormProducts = () => {
                     </div>
                     <br />
                     {nombre && newTitle ? (
-                        <MercadoPagoButton curso={{ ...producto, title: newTitle }} />
+                        <MercadoPagoButton curso={{ ...producto, title: newTitle, price: newPrice }} />
                     ) : (
                         <h6>Complete los datos para continuar con el pago</h6>
                     )}
