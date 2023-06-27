@@ -1,0 +1,37 @@
+.mpcontainerbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.buttonMp {
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3483fa;
+    padding: 0 2rem;
+    height: 50px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition-duration: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.enlace{
+    background: rgb(255, 115, 0);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}

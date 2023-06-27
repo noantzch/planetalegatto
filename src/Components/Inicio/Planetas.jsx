@@ -108,7 +108,7 @@ const Planetas = () => {
       </Carousel>
       </div>
         <div className="centradocontainer">
-          <h2 className='h2cards'>Instrumentos:</h2>
+          <h2 >Instrumentos</h2>
         </div>
       <div className='astronautasContainer desktop'>
         <div className='astronautaCard'>

@@ -58,7 +58,7 @@ const Profesores = () => {
             <Card.Body className='card-opiniones'>
               <Card.Title as="h3">Priscila</Card.Title>
               <Card.Img variant="top" src={pri} className='img-opiniones' />
-              <Card.Title as="h5">Prof. de Oboe y Estimulación Temprana</Card.Title>
+              <Card.Title as="h5">Prof. de Oboe e Iniciación Musical</Card.Title>
               {hoveredIndex === 3 && <p className='pProfes' id="cp3" >                "Soy oboista empecé en la música desde pequeña primero tocando el violín luego flauta dulce hasta que encontre mí instrumento.el oboe con el que me siento segura de que puedo transmitir música e inspirar ."</p>}
             </Card.Body>
           </Card>

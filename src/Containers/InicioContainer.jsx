@@ -5,7 +5,7 @@ import Planetas from '../Components/Inicio/Planetas'
 import AcercaDeLegatto from '../Components/Inicio/AcercaDeLegatto'
 import Preinscribete from '../Components/Inicio/Preinscribete'
 import Suzuki from '../Components/Inicio/Suzuki'
-import Opiniones from '../Components/Inicio/Opiniones'
+/* import Opiniones from '../Components/Inicio/Opiniones' */
 import NavbarL from '../Components/NavBar'
 import Calendario from '../Components/Calendario'
 
@@ -25,10 +25,9 @@ const InicioContainer = () => {
       <AcercaDeLegatto showButton={true} />
       <hr style={{border: '2px solid orange', margin: "0"} } />
       <Preinscribete />
-      <hr style={{color: "orange", margin: "0", marginBottom: "2vw"}}></hr>
-      < Calendario />
       <Suzuki />
-      <Opiniones />
+      < Calendario />
+      {/* <Opiniones /> */}
       <Footer /> 
     </div>
   )
