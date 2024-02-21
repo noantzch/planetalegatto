@@ -68,7 +68,7 @@ exports.createItem = functions.https.onRequest(async (request, response) => {
     response.status(204).send("");
   } else if (request.method === "POST") {
     const curso = await request.body.curso;
-    const URL = "https://planetalegatto-git-mp-noantzch.vercel.app/";
+    const URL = "https://www.planetalegatto.com.ar/";
 
     try {
       const preference = await {
