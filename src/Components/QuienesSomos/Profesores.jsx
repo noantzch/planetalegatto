@@ -25,7 +25,7 @@ const Profesores = () => {
         (
             profesores.map(profesor => (
               <div className='col-sm-12 col-md-4' key={profesor.id}>
-                <Card className='cardProfes' id="cp3">
+                <Card className='cardProfes' id="cp4">
                   <Card.Body className='card-opiniones'>
                     <Card.Title as="h3">Prof. {profesor.nombre}</Card.Title>
                     <Card.Img variant='top' src={profesor.img} className='img-opiniones' />
