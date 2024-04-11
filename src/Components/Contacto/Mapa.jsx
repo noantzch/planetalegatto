@@ -1,7 +1,7 @@
 import GoogleMapReact from "google-map-react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 function Mapa() {
-  const location = { lat: -24.7825302, lng: -65.4094984,21 };
+  const location = { lat: -24.7825302, lng: -65.4094984 };
   const AnyReactComponent = () => <FaMapMarkerAlt color="orange" size={32} />;
   return (
     <div className="mapaContainer">     
